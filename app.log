@@ -3018,22 +3018,3 @@ Allowed arguments: accessKey, aria-*, autoFocus, children, className, contentEdi
 2025-02-26 15:37:32,723 - modules.visualization - INFO - DashboardManager initialized successfully
 2025-02-26 15:37:32,723 - __main__ - INFO - Successfully initialized DashboardManager
 2025-02-26 15:37:32,843 - __main__ - INFO - Successfully initialized background tasks
-2025-02-26 15:51:03,791 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
-2025-02-26 15:51:08,656 - modules.data_collection - INFO - OTX client initialized
-2025-02-26 15:51:08,657 - modules.data_collection - INFO - VirusTotal client initialized
-2025-02-26 15:51:08,657 - __main__ - INFO - Successfully initialized DataCollector
-2025-02-26 15:51:08,662 - __main__ - INFO - Successfully initialized MLAnalyzer
-2025-02-26 15:51:08,684 - modules.visualization - INFO - DashboardManager initialized successfully
-2025-02-26 15:51:08,685 - __main__ - INFO - Successfully initialized DashboardManager
-2025-02-26 15:51:08,977 - __main__ - INFO - Successfully initialized background tasks
-2025-02-26 15:51:08,982 - dash.dash - INFO - Dash is running on http://localhost:8050/
-
-2025-02-26 15:51:11,745 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
-2025-02-26 15:51:16,943 - modules.data_collection - INFO - OTX client initialized
-2025-02-26 15:51:16,943 - modules.data_collection - INFO - VirusTotal client initialized
-2025-02-26 15:51:16,944 - __main__ - INFO - Successfully initialized DataCollector
-2025-02-26 15:51:16,950 - __main__ - INFO - Successfully initialized MLAnalyzer
-2025-02-26 15:51:17,009 - modules.visualization - INFO - DashboardManager initialized successfully
-2025-02-26 15:51:17,010 - __main__ - INFO - Successfully initialized DashboardManager
-2025-02-26 15:51:17,336 - __main__ - INFO - Successfully initialized background tasks
-2025-02-26 15:52:52,269 - modules.visualization - ERROR - Error updating threat map: index 7 is out of bounds for axis 0 with size 6

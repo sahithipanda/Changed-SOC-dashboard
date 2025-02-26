@@ -303,19 +303,22 @@ class DashboardManager:
                     lat=[locations[loc]['lat'] for loc in df['location']],
                     mode='markers',
                     marker=dict(
-                        size=10,
+                        size=12,
                         color=['red' if s == 'Critical' else 'orange' if s == 'High' else 'yellow' if s == 'Medium' else 'green' 
                                for s in df['severity']],
-                        opacity=0.7,
+                        opacity=0.8,
                         symbol='circle',
                         line=dict(width=1, color='white')
                     ),
                     text=df.apply(lambda x: f"Location: {x['location']}<br>Type: {x['type']}<br>Severity: {x['severity']}", axis=1),
-                    hoverinfo='text'
+                    hoverinfo='text',
+                    name='Threats'
                 ))
                 
+                # Update layout with fixed constraints
                 fig.update_layout(
                     geo=dict(
+                        scope='world',
                         projection_type='equirectangular',
                         showland=True,
                         showcountries=True,
@@ -326,19 +329,61 @@ class DashboardManager:
                         showcoastlines=True,
                         coastlinecolor='rgba(255, 255, 255, 0.2)',
                         showframe=False,
-                        bgcolor='rgba(0,0,0,0)'
+                        bgcolor='rgba(0,0,0,0)',
+                        # Set map center and zoom
+                        center=dict(
+                            lon=0,
+                            lat=20
+                        ),
+                        # Control zoom level
+                        projection=dict(
+                            scale=1.3  # Default zoom level
+                        ),
+                        # Set fixed ranges for lat/lon without grid
+                        lonaxis=dict(
+                            range=[-180, 180],
+                            showgrid=False  # Remove longitude grid
+                        ),
+                        lataxis=dict(
+                            range=[-60, 85],
+                            showgrid=False  # Remove latitude grid
+                        )
                     ),
                     paper_bgcolor='rgba(0,0,0,0)',
                     plot_bgcolor='rgba(0,0,0,0)',
                     margin=dict(l=0, r=0, t=0, b=0),
                     showlegend=False,
-                    height=400
+                    height=500,
+                    autosize=True,
+                    hovermode='closest',
+                    dragmode='pan',  # Set default interaction mode to pan
+                    transition=dict(
+                        duration=500,
+                        easing='cubic-in-out'
+                    )
                 )
                 
                 return fig
             except Exception as e:
                 logger.error(f"Error updating threat map: {e}")
-                return go.Figure()
+                # Return a basic world map if there's an error
+                return go.Figure(
+                    data=[],
+                    layout=go.Layout(
+                        geo=dict(
+                            scope='world',
+                            projection_type='equirectangular',
+                            showland=True,
+                            showcountries=True,
+                            projection=dict(
+                                scale=1.3  # Set default zoom level
+                            ),
+                            lonaxis=dict(showgrid=False),  # Remove grid in error state too
+                            lataxis=dict(showgrid=False)
+                        ),
+                        height=500
+                    )
+                )
 
         @self.app.callback(
             Output("trend-analysis", "figure"),
@@ -2813,7 +2858,22 @@ class DashboardManager:
             dbc.CardBody([
                 dcc.Graph(
                     id="threat-map",
-                    config={'displayModeBar': False}
+                    config={
+                        'displayModeBar': True,
+                        'scrollZoom': True,  # Enable scroll zoom
+                        'modeBarButtonsToRemove': [
+                            'lasso2d', 
+                            'select2d', 
+                            'autoScale2d',
+                            'resetScale2d',
+                            'zoom2d',
+                            'pan2d',
+                            'zoomIn2d',
+                            'zoomOut2d'
+                        ],  # Remove zoom and pan buttons
+                        'doubleClick': False  # Disable double click zoom
+                    },
+                    style={'height': '500px'}
                 )
             ])
         ], className="mb-4")
