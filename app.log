@@ -2981,3 +2981,40 @@ Allowed arguments: accessKey, aria-*, autoFocus, children, className, contentEdi
 2025-02-24 17:20:21,721 - modules.visualization - INFO - DashboardManager initialized successfully
 2025-02-24 17:20:21,721 - __main__ - INFO - Successfully initialized DashboardManager
 2025-02-24 17:20:22,022 - __main__ - INFO - Successfully initialized background tasks
+2025-02-26 14:33:01,631 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-02-26 14:33:25,479 - modules.data_collection - INFO - OTX client initialized
+2025-02-26 14:33:25,479 - modules.data_collection - INFO - VirusTotal client initialized
+2025-02-26 14:33:25,479 - __main__ - INFO - Successfully initialized DataCollector
+2025-02-26 14:33:25,479 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-02-26 14:33:25,562 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-02-26 14:33:25,562 - __main__ - INFO - Successfully initialized DashboardManager
+2025-02-26 14:33:26,681 - __main__ - INFO - Successfully initialized background tasks
+2025-02-26 14:33:26,697 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-02-26 14:33:28,041 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-02-26 14:33:29,478 - modules.data_collection - INFO - OTX client initialized
+2025-02-26 14:33:29,478 - modules.data_collection - INFO - VirusTotal client initialized
+2025-02-26 14:33:29,478 - __main__ - INFO - Successfully initialized DataCollector
+2025-02-26 14:33:29,478 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-02-26 14:33:29,499 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-02-26 14:33:29,499 - __main__ - INFO - Successfully initialized DashboardManager
+2025-02-26 14:33:29,589 - __main__ - INFO - Successfully initialized background tasks
+2025-02-26 14:40:13,126 - modules.visualization - ERROR - Error updating threat map: index 7 is out of bounds for axis 0 with size 6
+2025-02-26 15:37:10,525 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-02-26 15:37:28,843 - modules.data_collection - INFO - OTX client initialized
+2025-02-26 15:37:28,843 - modules.data_collection - INFO - VirusTotal client initialized
+2025-02-26 15:37:28,843 - __main__ - INFO - Successfully initialized DataCollector
+2025-02-26 15:37:28,859 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-02-26 15:37:28,958 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-02-26 15:37:28,959 - __main__ - INFO - Successfully initialized DashboardManager
+2025-02-26 15:37:29,862 - __main__ - INFO - Successfully initialized background tasks
+2025-02-26 15:37:29,862 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-02-26 15:37:31,154 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-02-26 15:37:32,718 - modules.data_collection - INFO - OTX client initialized
+2025-02-26 15:37:32,718 - modules.data_collection - INFO - VirusTotal client initialized
+2025-02-26 15:37:32,718 - __main__ - INFO - Successfully initialized DataCollector
+2025-02-26 15:37:32,718 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-02-26 15:37:32,723 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-02-26 15:37:32,723 - __main__ - INFO - Successfully initialized DashboardManager
+2025-02-26 15:37:32,843 - __main__ - INFO - Successfully initialized background tasks

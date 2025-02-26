@@ -803,8 +803,7 @@ class DashboardManager:
 
         # Report generation and download callback
         @self.app.callback(
-            [Output("download-report", "data"),
-             Output("recent-reports-list", "children")],
+            Output("download-report", "data"),
             [Input("generate-report-btn", "n_clicks")],
             [State("report-type", "value"),
              State("time-range", "value"),
@@ -813,7 +812,7 @@ class DashboardManager:
         )
         def generate_and_download_report(n_clicks, report_type, time_range, sections, export_format):
             if not n_clicks:
-                return None, self._get_recent_reports()
+                return None
 
             try:
                 # Generate threat data
@@ -829,7 +828,7 @@ class DashboardManager:
                         content=csv_buffer.getvalue(),
                         filename=f"{filename_base}.csv",
                         type="text/csv",
-                    ), self._get_recent_reports()
+                    )
 
                 elif export_format == "excel":
                     # Generate Excel with multiple sheets
@@ -865,7 +864,7 @@ class DashboardManager:
                         filename=f"{filename_base}.xlsx",
                         type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
                         base64=True
-                    ), self._get_recent_reports()
+                    )
 
                 else:  # PDF
                     # Generate PDF report
@@ -877,20 +876,11 @@ class DashboardManager:
                         filename=f"{filename_base}.pdf",
                         type="application/pdf",
                         base64=True
-                    ), self._get_recent_reports()
+                    )
 
             except Exception as e:
                 logger.error(f"Error generating report: {str(e)}")
-                error_message = dbc.Alert(
-                    [
-                        html.I(className="fas fa-exclamation-circle mr-2"),
-                        f"Error generating report: {str(e)}"
-                    ],
-                    color="danger",
-                    dismissable=True,
-                    className="mb-3"
-                )
-                return None, [error_message, self._get_recent_reports()]
+                return None
 
         # Add new callback for alert collapse
         @self.app.callback(
@@ -1755,16 +1745,6 @@ class DashboardManager:
                                 ])
                             ], className="bg-dark")
                         ], className="mb-4 border-0")
-                    ], md=12)
-                ]),
-                dbc.Row([
-                    dbc.Col([
-                        dbc.Card([
-                            dbc.CardHeader("Recent Reports", className="bg-dark text-light"),
-                            dbc.CardBody([
-                                html.Div(id="recent-reports-list", className="bg-dark")
-                            ], className="bg-dark")
-                        ], className="border-0")
                     ], md=12)
                 ])
             ], fluid=True)
