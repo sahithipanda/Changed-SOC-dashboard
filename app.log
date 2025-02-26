@@ -3018,3 +3018,991 @@ Allowed arguments: accessKey, aria-*, autoFocus, children, className, contentEdi
 2025-02-26 15:37:32,723 - modules.visualization - INFO - DashboardManager initialized successfully
 2025-02-26 15:37:32,723 - __main__ - INFO - Successfully initialized DashboardManager
 2025-02-26 15:37:32,843 - __main__ - INFO - Successfully initialized background tasks
+2025-02-26 15:49:47,015 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-02-26 15:49:48,739 - modules.data_collection - INFO - OTX client initialized
+2025-02-26 15:49:48,740 - modules.data_collection - INFO - VirusTotal client initialized
+2025-02-26 15:49:48,740 - __main__ - INFO - Successfully initialized DataCollector
+2025-02-26 15:49:48,744 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-02-26 15:49:48,803 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-02-26 15:49:48,804 - __main__ - INFO - Successfully initialized DashboardManager
+2025-02-26 15:49:48,921 - __main__ - INFO - Successfully initialized background tasks
+2025-02-26 15:53:48,710 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-02-26 15:53:50,334 - modules.data_collection - INFO - OTX client initialized
+2025-02-26 15:53:50,334 - modules.data_collection - INFO - VirusTotal client initialized
+2025-02-26 15:53:50,335 - __main__ - INFO - Successfully initialized DataCollector
+2025-02-26 15:53:50,338 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-02-26 15:53:50,400 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-02-26 15:53:50,400 - __main__ - INFO - Successfully initialized DashboardManager
+2025-02-26 15:53:50,513 - __main__ - INFO - Successfully initialized background tasks
+2025-02-26 15:53:51,898 - modules.visualization - ERROR - Error updating threat map: Invalid property specified for object of type plotly.graph_objs.layout.geo.Lonaxis: 'constrain'
+
+Did you mean "showgrid"?
+
+    Valid properties:
+        dtick
+            Sets the graticule's longitude/latitude tick step.
+        gridcolor
+            Sets the graticule's stroke color.
+        griddash
+            Sets the dash style of lines. Set to a dash type string
+            ("solid", "dot", "dash", "longdash", "dashdot", or
+            "longdashdot") or a dash length list in px (eg
+            "5px,10px,2px,2px").
+        gridwidth
+            Sets the graticule's stroke width (in px).
+        range
+            Sets the range of this axis (in degrees), sets the
+            map's clipped coordinates.
+        showgrid
+            Sets whether or not graticule are shown on the map.
+        tick0
+            Sets the graticule's starting tick longitude/latitude.
+        
+Did you mean "showgrid"?
+
+Bad property path:
+constrain
+^^^^^^^^^
+2025-02-26 15:53:52,838 - modules.visualization - ERROR - Error updating threat map: Invalid property specified for object of type plotly.graph_objs.layout.geo.Lonaxis: 'constrain'
+
+Did you mean "showgrid"?
+
+    Valid properties:
+        dtick
+            Sets the graticule's longitude/latitude tick step.
+        gridcolor
+            Sets the graticule's stroke color.
+        griddash
+            Sets the dash style of lines. Set to a dash type string
+            ("solid", "dot", "dash", "longdash", "dashdot", or
+            "longdashdot") or a dash length list in px (eg
+            "5px,10px,2px,2px").
+        gridwidth
+            Sets the graticule's stroke width (in px).
+        range
+            Sets the range of this axis (in degrees), sets the
+            map's clipped coordinates.
+        showgrid
+            Sets whether or not graticule are shown on the map.
+        tick0
+            Sets the graticule's starting tick longitude/latitude.
+        
+Did you mean "showgrid"?
+
+Bad property path:
+constrain
+^^^^^^^^^
+2025-02-26 15:53:57,825 - modules.visualization - ERROR - Error updating threat map: Invalid property specified for object of type plotly.graph_objs.layout.geo.Lonaxis: 'constrain'
+
+Did you mean "showgrid"?
+
+    Valid properties:
+        dtick
+            Sets the graticule's longitude/latitude tick step.
+        gridcolor
+            Sets the graticule's stroke color.
+        griddash
+            Sets the dash style of lines. Set to a dash type string
+            ("solid", "dot", "dash", "longdash", "dashdot", or
+            "longdashdot") or a dash length list in px (eg
+            "5px,10px,2px,2px").
+        gridwidth
+            Sets the graticule's stroke width (in px).
+        range
+            Sets the range of this axis (in degrees), sets the
+            map's clipped coordinates.
+        showgrid
+            Sets whether or not graticule are shown on the map.
+        tick0
+            Sets the graticule's starting tick longitude/latitude.
+        
+Did you mean "showgrid"?
+
+Bad property path:
+constrain
+^^^^^^^^^
+2025-02-26 15:54:03,542 - modules.visualization - ERROR - Error updating threat map: Invalid property specified for object of type plotly.graph_objs.layout.geo.Lonaxis: 'constrain'
+
+Did you mean "showgrid"?
+
+    Valid properties:
+        dtick
+            Sets the graticule's longitude/latitude tick step.
+        gridcolor
+            Sets the graticule's stroke color.
+        griddash
+            Sets the dash style of lines. Set to a dash type string
+            ("solid", "dot", "dash", "longdash", "dashdot", or
+            "longdashdot") or a dash length list in px (eg
+            "5px,10px,2px,2px").
+        gridwidth
+            Sets the graticule's stroke width (in px).
+        range
+            Sets the range of this axis (in degrees), sets the
+            map's clipped coordinates.
+        showgrid
+            Sets whether or not graticule are shown on the map.
+        tick0
+            Sets the graticule's starting tick longitude/latitude.
+        
+Did you mean "showgrid"?
+
+Bad property path:
+constrain
+^^^^^^^^^
+2025-02-26 15:54:08,788 - modules.visualization - ERROR - Error updating threat map: Invalid property specified for object of type plotly.graph_objs.layout.geo.Lonaxis: 'constrain'
+
+Did you mean "showgrid"?
+
+    Valid properties:
+        dtick
+            Sets the graticule's longitude/latitude tick step.
+        gridcolor
+            Sets the graticule's stroke color.
+        griddash
+            Sets the dash style of lines. Set to a dash type string
+            ("solid", "dot", "dash", "longdash", "dashdot", or
+            "longdashdot") or a dash length list in px (eg
+            "5px,10px,2px,2px").
+        gridwidth
+            Sets the graticule's stroke width (in px).
+        range
+            Sets the range of this axis (in degrees), sets the
+            map's clipped coordinates.
+        showgrid
+            Sets whether or not graticule are shown on the map.
+        tick0
+            Sets the graticule's starting tick longitude/latitude.
+        
+Did you mean "showgrid"?
+
+Bad property path:
+constrain
+^^^^^^^^^
+2025-02-26 15:54:13,708 - modules.visualization - ERROR - Error updating threat map: Invalid property specified for object of type plotly.graph_objs.layout.geo.Lonaxis: 'constrain'
+
+Did you mean "showgrid"?
+
+    Valid properties:
+        dtick
+            Sets the graticule's longitude/latitude tick step.
+        gridcolor
+            Sets the graticule's stroke color.
+        griddash
+            Sets the dash style of lines. Set to a dash type string
+            ("solid", "dot", "dash", "longdash", "dashdot", or
+            "longdashdot") or a dash length list in px (eg
+            "5px,10px,2px,2px").
+        gridwidth
+            Sets the graticule's stroke width (in px).
+        range
+            Sets the range of this axis (in degrees), sets the
+            map's clipped coordinates.
+        showgrid
+            Sets whether or not graticule are shown on the map.
+        tick0
+            Sets the graticule's starting tick longitude/latitude.
+        
+Did you mean "showgrid"?
+
+Bad property path:
+constrain
+^^^^^^^^^
+2025-02-26 15:54:18,767 - modules.visualization - ERROR - Error updating threat map: Invalid property specified for object of type plotly.graph_objs.layout.geo.Lonaxis: 'constrain'
+
+Did you mean "showgrid"?
+
+    Valid properties:
+        dtick
+            Sets the graticule's longitude/latitude tick step.
+        gridcolor
+            Sets the graticule's stroke color.
+        griddash
+            Sets the dash style of lines. Set to a dash type string
+            ("solid", "dot", "dash", "longdash", "dashdot", or
+            "longdashdot") or a dash length list in px (eg
+            "5px,10px,2px,2px").
+        gridwidth
+            Sets the graticule's stroke width (in px).
+        range
+            Sets the range of this axis (in degrees), sets the
+            map's clipped coordinates.
+        showgrid
+            Sets whether or not graticule are shown on the map.
+        tick0
+            Sets the graticule's starting tick longitude/latitude.
+        
+Did you mean "showgrid"?
+
+Bad property path:
+constrain
+^^^^^^^^^
+2025-02-26 15:54:24,719 - modules.visualization - ERROR - Error updating threat map: Invalid property specified for object of type plotly.graph_objs.layout.geo.Lonaxis: 'constrain'
+
+Did you mean "showgrid"?
+
+    Valid properties:
+        dtick
+            Sets the graticule's longitude/latitude tick step.
+        gridcolor
+            Sets the graticule's stroke color.
+        griddash
+            Sets the dash style of lines. Set to a dash type string
+            ("solid", "dot", "dash", "longdash", "dashdot", or
+            "longdashdot") or a dash length list in px (eg
+            "5px,10px,2px,2px").
+        gridwidth
+            Sets the graticule's stroke width (in px).
+        range
+            Sets the range of this axis (in degrees), sets the
+            map's clipped coordinates.
+        showgrid
+            Sets whether or not graticule are shown on the map.
+        tick0
+            Sets the graticule's starting tick longitude/latitude.
+        
+Did you mean "showgrid"?
+
+Bad property path:
+constrain
+^^^^^^^^^
+2025-02-26 15:54:29,730 - modules.visualization - ERROR - Error updating threat map: Invalid property specified for object of type plotly.graph_objs.layout.geo.Lonaxis: 'constrain'
+
+Did you mean "showgrid"?
+
+    Valid properties:
+        dtick
+            Sets the graticule's longitude/latitude tick step.
+        gridcolor
+            Sets the graticule's stroke color.
+        griddash
+            Sets the dash style of lines. Set to a dash type string
+            ("solid", "dot", "dash", "longdash", "dashdot", or
+            "longdashdot") or a dash length list in px (eg
+            "5px,10px,2px,2px").
+        gridwidth
+            Sets the graticule's stroke width (in px).
+        range
+            Sets the range of this axis (in degrees), sets the
+            map's clipped coordinates.
+        showgrid
+            Sets whether or not graticule are shown on the map.
+        tick0
+            Sets the graticule's starting tick longitude/latitude.
+        
+Did you mean "showgrid"?
+
+Bad property path:
+constrain
+^^^^^^^^^
+2025-02-26 15:54:38,691 - modules.visualization - ERROR - Error updating threat map: Invalid property specified for object of type plotly.graph_objs.layout.geo.Lonaxis: 'constrain'
+
+Did you mean "showgrid"?
+
+    Valid properties:
+        dtick
+            Sets the graticule's longitude/latitude tick step.
+        gridcolor
+            Sets the graticule's stroke color.
+        griddash
+            Sets the dash style of lines. Set to a dash type string
+            ("solid", "dot", "dash", "longdash", "dashdot", or
+            "longdashdot") or a dash length list in px (eg
+            "5px,10px,2px,2px").
+        gridwidth
+            Sets the graticule's stroke width (in px).
+        range
+            Sets the range of this axis (in degrees), sets the
+            map's clipped coordinates.
+        showgrid
+            Sets whether or not graticule are shown on the map.
+        tick0
+            Sets the graticule's starting tick longitude/latitude.
+        
+Did you mean "showgrid"?
+
+Bad property path:
+constrain
+^^^^^^^^^
+2025-02-26 15:54:52,384 - modules.visualization - ERROR - Error updating threat map: Invalid property specified for object of type plotly.graph_objs.layout.geo.Lonaxis: 'constrain'
+
+Did you mean "showgrid"?
+
+    Valid properties:
+        dtick
+            Sets the graticule's longitude/latitude tick step.
+        gridcolor
+            Sets the graticule's stroke color.
+        griddash
+            Sets the dash style of lines. Set to a dash type string
+            ("solid", "dot", "dash", "longdash", "dashdot", or
+            "longdashdot") or a dash length list in px (eg
+            "5px,10px,2px,2px").
+        gridwidth
+            Sets the graticule's stroke width (in px).
+        range
+            Sets the range of this axis (in degrees), sets the
+            map's clipped coordinates.
+        showgrid
+            Sets whether or not graticule are shown on the map.
+        tick0
+            Sets the graticule's starting tick longitude/latitude.
+        
+Did you mean "showgrid"?
+
+Bad property path:
+constrain
+^^^^^^^^^
+2025-02-26 15:55:02,700 - modules.visualization - ERROR - Error updating threat map: Invalid property specified for object of type plotly.graph_objs.layout.geo.Lonaxis: 'constrain'
+
+Did you mean "showgrid"?
+
+    Valid properties:
+        dtick
+            Sets the graticule's longitude/latitude tick step.
+        gridcolor
+            Sets the graticule's stroke color.
+        griddash
+            Sets the dash style of lines. Set to a dash type string
+            ("solid", "dot", "dash", "longdash", "dashdot", or
+            "longdashdot") or a dash length list in px (eg
+            "5px,10px,2px,2px").
+        gridwidth
+            Sets the graticule's stroke width (in px).
+        range
+            Sets the range of this axis (in degrees), sets the
+            map's clipped coordinates.
+        showgrid
+            Sets whether or not graticule are shown on the map.
+        tick0
+            Sets the graticule's starting tick longitude/latitude.
+        
+Did you mean "showgrid"?
+
+Bad property path:
+constrain
+^^^^^^^^^
+2025-02-26 15:55:14,341 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-02-26 15:55:15,974 - modules.data_collection - INFO - OTX client initialized
+2025-02-26 15:55:15,975 - modules.data_collection - INFO - VirusTotal client initialized
+2025-02-26 15:55:15,975 - __main__ - INFO - Successfully initialized DataCollector
+2025-02-26 15:55:15,979 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-02-26 15:55:15,988 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-02-26 15:55:15,989 - __main__ - INFO - Successfully initialized DashboardManager
+2025-02-26 15:55:16,094 - __main__ - INFO - Successfully initialized background tasks
+2025-02-26 15:55:16,379 - modules.visualization - ERROR - Error updating threat map: Invalid property specified for object of type plotly.graph_objs.layout.geo.Lonaxis: 'constrain'
+
+Did you mean "showgrid"?
+
+    Valid properties:
+        dtick
+            Sets the graticule's longitude/latitude tick step.
+        gridcolor
+            Sets the graticule's stroke color.
+        griddash
+            Sets the dash style of lines. Set to a dash type string
+            ("solid", "dot", "dash", "longdash", "dashdot", or
+            "longdashdot") or a dash length list in px (eg
+            "5px,10px,2px,2px").
+        gridwidth
+            Sets the graticule's stroke width (in px).
+        range
+            Sets the range of this axis (in degrees), sets the
+            map's clipped coordinates.
+        showgrid
+            Sets whether or not graticule are shown on the map.
+        tick0
+            Sets the graticule's starting tick longitude/latitude.
+        
+Did you mean "showgrid"?
+
+Bad property path:
+constrain
+^^^^^^^^^
+2025-02-26 15:55:19,725 - modules.visualization - ERROR - Error updating threat map: Invalid property specified for object of type plotly.graph_objs.layout.geo.Lonaxis: 'constrain'
+
+Did you mean "showgrid"?
+
+    Valid properties:
+        dtick
+            Sets the graticule's longitude/latitude tick step.
+        gridcolor
+            Sets the graticule's stroke color.
+        griddash
+            Sets the dash style of lines. Set to a dash type string
+            ("solid", "dot", "dash", "longdash", "dashdot", or
+            "longdashdot") or a dash length list in px (eg
+            "5px,10px,2px,2px").
+        gridwidth
+            Sets the graticule's stroke width (in px).
+        range
+            Sets the range of this axis (in degrees), sets the
+            map's clipped coordinates.
+        showgrid
+            Sets whether or not graticule are shown on the map.
+        tick0
+            Sets the graticule's starting tick longitude/latitude.
+        
+Did you mean "showgrid"?
+
+Bad property path:
+constrain
+^^^^^^^^^
+2025-02-26 15:55:31,008 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-02-26 15:55:32,780 - modules.data_collection - INFO - OTX client initialized
+2025-02-26 15:55:32,781 - modules.data_collection - INFO - VirusTotal client initialized
+2025-02-26 15:55:32,782 - __main__ - INFO - Successfully initialized DataCollector
+2025-02-26 15:55:32,787 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-02-26 15:55:32,812 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-02-26 15:55:32,812 - __main__ - INFO - Successfully initialized DashboardManager
+2025-02-26 15:55:32,996 - __main__ - INFO - Successfully initialized background tasks
+2025-02-26 15:57:38,210 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-02-26 15:57:40,066 - modules.data_collection - INFO - OTX client initialized
+2025-02-26 15:57:40,068 - modules.data_collection - INFO - VirusTotal client initialized
+2025-02-26 15:57:40,068 - __main__ - INFO - Successfully initialized DataCollector
+2025-02-26 15:57:40,071 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-02-26 15:57:40,133 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-02-26 15:57:40,134 - __main__ - INFO - Successfully initialized DashboardManager
+2025-02-26 15:57:40,245 - __main__ - INFO - Successfully initialized background tasks
+2025-02-26 15:57:42,748 - modules.visualization - ERROR - Error updating threat map: Invalid property specified for object of type plotly.graph_objs.layout.Geo: 'minscale'
+
+Did you mean "visible"?
+
+    Valid properties:
+        bgcolor
+            Set the background color of the map
+        center
+            :class:`plotly.graph_objects.layout.geo.Center`
+            instance or dict with compatible properties
+        coastlinecolor
+            Sets the coastline color.
+        coastlinewidth
+            Sets the coastline stroke width (in px).
+        countrycolor
+            Sets line color of the country boundaries.
+        countrywidth
+            Sets line width (in px) of the country boundaries.
+        domain
+            :class:`plotly.graph_objects.layout.geo.Domain`
+            instance or dict with compatible properties
+        fitbounds
+            Determines if this subplot's view settings are auto-
+            computed to fit trace data. On scoped maps, setting
+            `fitbounds` leads to `center.lon` and `center.lat`
+            getting auto-filled. On maps with a non-clipped
+            projection, setting `fitbounds` leads to `center.lon`,
+            `center.lat`, and `projection.rotation.lon` getting
+            auto-filled. On maps with a clipped projection, setting
+            `fitbounds` leads to `center.lon`, `center.lat`,
+            `projection.rotation.lon`, `projection.rotation.lat`,
+            `lonaxis.range` and `lonaxis.range` getting auto-
+            filled. If "locations", only the trace's visible
+            locations are considered in the `fitbounds`
+            computations. If "geojson", the entire trace input
+            `geojson` (if provided) is considered in the
+            `fitbounds` computations, Defaults to False.
+        framecolor
+            Sets the color the frame.
+        framewidth
+            Sets the stroke width (in px) of the frame.
+        lakecolor
+            Sets the color of the lakes.
+        landcolor
+            Sets the land mass color.
+        lataxis
+            :class:`plotly.graph_objects.layout.geo.Lataxis`
+            instance or dict with compatible properties
+        lonaxis
+            :class:`plotly.graph_objects.layout.geo.Lonaxis`
+            instance or dict with compatible properties
+        oceancolor
+            Sets the ocean color
+        projection
+            :class:`plotly.graph_objects.layout.geo.Projection`
+            instance or dict with compatible properties
+        resolution
+            Sets the resolution of the base layers. The values have
+            units of km/mm e.g. 110 corresponds to a scale ratio of
+            1:110,000,000.
+        rivercolor
+            Sets color of the rivers.
+        riverwidth
+            Sets the stroke width (in px) of the rivers.
+        scope
+            Set the scope of the map.
+        showcoastlines
+            Sets whether or not the coastlines are drawn.
+        showcountries
+            Sets whether or not country boundaries are drawn.
+        showframe
+            Sets whether or not a frame is drawn around the map.
+        showlakes
+            Sets whether or not lakes are drawn.
+        showland
+            Sets whether or not land masses are filled in color.
+        showocean
+            Sets whether or not oceans are filled in color.
+        showrivers
+            Sets whether or not rivers are drawn.
+        showsubunits
+            Sets whether or not boundaries of subunits within
+            countries (e.g. states, provinces) are drawn.
+        subunitcolor
+            Sets the color of the subunits boundaries.
+        subunitwidth
+            Sets the stroke width (in px) of the subunits
+            boundaries.
+        uirevision
+            Controls persistence of user-driven changes in the view
+            (projection and center). Defaults to
+            `layout.uirevision`.
+        visible
+            Sets the default visibility of the base layers.
+        
+Did you mean "visible"?
+
+Bad property path:
+minscale
+^^^^^^^^
+2025-02-26 15:57:45,255 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-02-26 15:57:47,208 - modules.data_collection - INFO - OTX client initialized
+2025-02-26 15:57:47,209 - modules.data_collection - INFO - VirusTotal client initialized
+2025-02-26 15:57:47,210 - __main__ - INFO - Successfully initialized DataCollector
+2025-02-26 15:57:47,214 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-02-26 15:57:47,233 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-02-26 15:57:47,233 - __main__ - INFO - Successfully initialized DashboardManager
+2025-02-26 15:57:47,402 - __main__ - INFO - Successfully initialized background tasks
+2025-02-26 15:57:47,754 - modules.visualization - ERROR - Error updating threat map: Invalid property specified for object of type plotly.graph_objs.layout.Geo: 'minscale'
+
+Did you mean "visible"?
+
+    Valid properties:
+        bgcolor
+            Set the background color of the map
+        center
+            :class:`plotly.graph_objects.layout.geo.Center`
+            instance or dict with compatible properties
+        coastlinecolor
+            Sets the coastline color.
+        coastlinewidth
+            Sets the coastline stroke width (in px).
+        countrycolor
+            Sets line color of the country boundaries.
+        countrywidth
+            Sets line width (in px) of the country boundaries.
+        domain
+            :class:`plotly.graph_objects.layout.geo.Domain`
+            instance or dict with compatible properties
+        fitbounds
+            Determines if this subplot's view settings are auto-
+            computed to fit trace data. On scoped maps, setting
+            `fitbounds` leads to `center.lon` and `center.lat`
+            getting auto-filled. On maps with a non-clipped
+            projection, setting `fitbounds` leads to `center.lon`,
+            `center.lat`, and `projection.rotation.lon` getting
+            auto-filled. On maps with a clipped projection, setting
+            `fitbounds` leads to `center.lon`, `center.lat`,
+            `projection.rotation.lon`, `projection.rotation.lat`,
+            `lonaxis.range` and `lonaxis.range` getting auto-
+            filled. If "locations", only the trace's visible
+            locations are considered in the `fitbounds`
+            computations. If "geojson", the entire trace input
+            `geojson` (if provided) is considered in the
+            `fitbounds` computations, Defaults to False.
+        framecolor
+            Sets the color the frame.
+        framewidth
+            Sets the stroke width (in px) of the frame.
+        lakecolor
+            Sets the color of the lakes.
+        landcolor
+            Sets the land mass color.
+        lataxis
+            :class:`plotly.graph_objects.layout.geo.Lataxis`
+            instance or dict with compatible properties
+        lonaxis
+            :class:`plotly.graph_objects.layout.geo.Lonaxis`
+            instance or dict with compatible properties
+        oceancolor
+            Sets the ocean color
+        projection
+            :class:`plotly.graph_objects.layout.geo.Projection`
+            instance or dict with compatible properties
+        resolution
+            Sets the resolution of the base layers. The values have
+            units of km/mm e.g. 110 corresponds to a scale ratio of
+            1:110,000,000.
+        rivercolor
+            Sets color of the rivers.
+        riverwidth
+            Sets the stroke width (in px) of the rivers.
+        scope
+            Set the scope of the map.
+        showcoastlines
+            Sets whether or not the coastlines are drawn.
+        showcountries
+            Sets whether or not country boundaries are drawn.
+        showframe
+            Sets whether or not a frame is drawn around the map.
+        showlakes
+            Sets whether or not lakes are drawn.
+        showland
+            Sets whether or not land masses are filled in color.
+        showocean
+            Sets whether or not oceans are filled in color.
+        showrivers
+            Sets whether or not rivers are drawn.
+        showsubunits
+            Sets whether or not boundaries of subunits within
+            countries (e.g. states, provinces) are drawn.
+        subunitcolor
+            Sets the color of the subunits boundaries.
+        subunitwidth
+            Sets the stroke width (in px) of the subunits
+            boundaries.
+        uirevision
+            Controls persistence of user-driven changes in the view
+            (projection and center). Defaults to
+            `layout.uirevision`.
+        visible
+            Sets the default visibility of the base layers.
+        
+Did you mean "visible"?
+
+Bad property path:
+minscale
+^^^^^^^^
+2025-02-26 15:57:52,727 - modules.visualization - ERROR - Error updating threat map: Invalid property specified for object of type plotly.graph_objs.layout.Geo: 'minscale'
+
+Did you mean "visible"?
+
+    Valid properties:
+        bgcolor
+            Set the background color of the map
+        center
+            :class:`plotly.graph_objects.layout.geo.Center`
+            instance or dict with compatible properties
+        coastlinecolor
+            Sets the coastline color.
+        coastlinewidth
+            Sets the coastline stroke width (in px).
+        countrycolor
+            Sets line color of the country boundaries.
+        countrywidth
+            Sets line width (in px) of the country boundaries.
+        domain
+            :class:`plotly.graph_objects.layout.geo.Domain`
+            instance or dict with compatible properties
+        fitbounds
+            Determines if this subplot's view settings are auto-
+            computed to fit trace data. On scoped maps, setting
+            `fitbounds` leads to `center.lon` and `center.lat`
+            getting auto-filled. On maps with a non-clipped
+            projection, setting `fitbounds` leads to `center.lon`,
+            `center.lat`, and `projection.rotation.lon` getting
+            auto-filled. On maps with a clipped projection, setting
+            `fitbounds` leads to `center.lon`, `center.lat`,
+            `projection.rotation.lon`, `projection.rotation.lat`,
+            `lonaxis.range` and `lonaxis.range` getting auto-
+            filled. If "locations", only the trace's visible
+            locations are considered in the `fitbounds`
+            computations. If "geojson", the entire trace input
+            `geojson` (if provided) is considered in the
+            `fitbounds` computations, Defaults to False.
+        framecolor
+            Sets the color the frame.
+        framewidth
+            Sets the stroke width (in px) of the frame.
+        lakecolor
+            Sets the color of the lakes.
+        landcolor
+            Sets the land mass color.
+        lataxis
+            :class:`plotly.graph_objects.layout.geo.Lataxis`
+            instance or dict with compatible properties
+        lonaxis
+            :class:`plotly.graph_objects.layout.geo.Lonaxis`
+            instance or dict with compatible properties
+        oceancolor
+            Sets the ocean color
+        projection
+            :class:`plotly.graph_objects.layout.geo.Projection`
+            instance or dict with compatible properties
+        resolution
+            Sets the resolution of the base layers. The values have
+            units of km/mm e.g. 110 corresponds to a scale ratio of
+            1:110,000,000.
+        rivercolor
+            Sets color of the rivers.
+        riverwidth
+            Sets the stroke width (in px) of the rivers.
+        scope
+            Set the scope of the map.
+        showcoastlines
+            Sets whether or not the coastlines are drawn.
+        showcountries
+            Sets whether or not country boundaries are drawn.
+        showframe
+            Sets whether or not a frame is drawn around the map.
+        showlakes
+            Sets whether or not lakes are drawn.
+        showland
+            Sets whether or not land masses are filled in color.
+        showocean
+            Sets whether or not oceans are filled in color.
+        showrivers
+            Sets whether or not rivers are drawn.
+        showsubunits
+            Sets whether or not boundaries of subunits within
+            countries (e.g. states, provinces) are drawn.
+        subunitcolor
+            Sets the color of the subunits boundaries.
+        subunitwidth
+            Sets the stroke width (in px) of the subunits
+            boundaries.
+        uirevision
+            Controls persistence of user-driven changes in the view
+            (projection and center). Defaults to
+            `layout.uirevision`.
+        visible
+            Sets the default visibility of the base layers.
+        
+Did you mean "visible"?
+
+Bad property path:
+minscale
+^^^^^^^^
+2025-02-26 15:57:57,743 - modules.visualization - ERROR - Error updating threat map: Invalid property specified for object of type plotly.graph_objs.layout.Geo: 'minscale'
+
+Did you mean "visible"?
+
+    Valid properties:
+        bgcolor
+            Set the background color of the map
+        center
+            :class:`plotly.graph_objects.layout.geo.Center`
+            instance or dict with compatible properties
+        coastlinecolor
+            Sets the coastline color.
+        coastlinewidth
+            Sets the coastline stroke width (in px).
+        countrycolor
+            Sets line color of the country boundaries.
+        countrywidth
+            Sets line width (in px) of the country boundaries.
+        domain
+            :class:`plotly.graph_objects.layout.geo.Domain`
+            instance or dict with compatible properties
+        fitbounds
+            Determines if this subplot's view settings are auto-
+            computed to fit trace data. On scoped maps, setting
+            `fitbounds` leads to `center.lon` and `center.lat`
+            getting auto-filled. On maps with a non-clipped
+            projection, setting `fitbounds` leads to `center.lon`,
+            `center.lat`, and `projection.rotation.lon` getting
+            auto-filled. On maps with a clipped projection, setting
+            `fitbounds` leads to `center.lon`, `center.lat`,
+            `projection.rotation.lon`, `projection.rotation.lat`,
+            `lonaxis.range` and `lonaxis.range` getting auto-
+            filled. If "locations", only the trace's visible
+            locations are considered in the `fitbounds`
+            computations. If "geojson", the entire trace input
+            `geojson` (if provided) is considered in the
+            `fitbounds` computations, Defaults to False.
+        framecolor
+            Sets the color the frame.
+        framewidth
+            Sets the stroke width (in px) of the frame.
+        lakecolor
+            Sets the color of the lakes.
+        landcolor
+            Sets the land mass color.
+        lataxis
+            :class:`plotly.graph_objects.layout.geo.Lataxis`
+            instance or dict with compatible properties
+        lonaxis
+            :class:`plotly.graph_objects.layout.geo.Lonaxis`
+            instance or dict with compatible properties
+        oceancolor
+            Sets the ocean color
+        projection
+            :class:`plotly.graph_objects.layout.geo.Projection`
+            instance or dict with compatible properties
+        resolution
+            Sets the resolution of the base layers. The values have
+            units of km/mm e.g. 110 corresponds to a scale ratio of
+            1:110,000,000.
+        rivercolor
+            Sets color of the rivers.
+        riverwidth
+            Sets the stroke width (in px) of the rivers.
+        scope
+            Set the scope of the map.
+        showcoastlines
+            Sets whether or not the coastlines are drawn.
+        showcountries
+            Sets whether or not country boundaries are drawn.
+        showframe
+            Sets whether or not a frame is drawn around the map.
+        showlakes
+            Sets whether or not lakes are drawn.
+        showland
+            Sets whether or not land masses are filled in color.
+        showocean
+            Sets whether or not oceans are filled in color.
+        showrivers
+            Sets whether or not rivers are drawn.
+        showsubunits
+            Sets whether or not boundaries of subunits within
+            countries (e.g. states, provinces) are drawn.
+        subunitcolor
+            Sets the color of the subunits boundaries.
+        subunitwidth
+            Sets the stroke width (in px) of the subunits
+            boundaries.
+        uirevision
+            Controls persistence of user-driven changes in the view
+            (projection and center). Defaults to
+            `layout.uirevision`.
+        visible
+            Sets the default visibility of the base layers.
+        
+Did you mean "visible"?
+
+Bad property path:
+minscale
+^^^^^^^^
+2025-02-26 15:58:03,700 - modules.visualization - ERROR - Error updating threat map: Invalid property specified for object of type plotly.graph_objs.layout.Geo: 'minscale'
+
+Did you mean "visible"?
+
+    Valid properties:
+        bgcolor
+            Set the background color of the map
+        center
+            :class:`plotly.graph_objects.layout.geo.Center`
+            instance or dict with compatible properties
+        coastlinecolor
+            Sets the coastline color.
+        coastlinewidth
+            Sets the coastline stroke width (in px).
+        countrycolor
+            Sets line color of the country boundaries.
+        countrywidth
+            Sets line width (in px) of the country boundaries.
+        domain
+            :class:`plotly.graph_objects.layout.geo.Domain`
+            instance or dict with compatible properties
+        fitbounds
+            Determines if this subplot's view settings are auto-
+            computed to fit trace data. On scoped maps, setting
+            `fitbounds` leads to `center.lon` and `center.lat`
+            getting auto-filled. On maps with a non-clipped
+            projection, setting `fitbounds` leads to `center.lon`,
+            `center.lat`, and `projection.rotation.lon` getting
+            auto-filled. On maps with a clipped projection, setting
+            `fitbounds` leads to `center.lon`, `center.lat`,
+            `projection.rotation.lon`, `projection.rotation.lat`,
+            `lonaxis.range` and `lonaxis.range` getting auto-
+            filled. If "locations", only the trace's visible
+            locations are considered in the `fitbounds`
+            computations. If "geojson", the entire trace input
+            `geojson` (if provided) is considered in the
+            `fitbounds` computations, Defaults to False.
+        framecolor
+            Sets the color the frame.
+        framewidth
+            Sets the stroke width (in px) of the frame.
+        lakecolor
+            Sets the color of the lakes.
+        landcolor
+            Sets the land mass color.
+        lataxis
+            :class:`plotly.graph_objects.layout.geo.Lataxis`
+            instance or dict with compatible properties
+        lonaxis
+            :class:`plotly.graph_objects.layout.geo.Lonaxis`
+            instance or dict with compatible properties
+        oceancolor
+            Sets the ocean color
+        projection
+            :class:`plotly.graph_objects.layout.geo.Projection`
+            instance or dict with compatible properties
+        resolution
+            Sets the resolution of the base layers. The values have
+            units of km/mm e.g. 110 corresponds to a scale ratio of
+            1:110,000,000.
+        rivercolor
+            Sets color of the rivers.
+        riverwidth
+            Sets the stroke width (in px) of the rivers.
+        scope
+            Set the scope of the map.
+        showcoastlines
+            Sets whether or not the coastlines are drawn.
+        showcountries
+            Sets whether or not country boundaries are drawn.
+        showframe
+            Sets whether or not a frame is drawn around the map.
+        showlakes
+            Sets whether or not lakes are drawn.
+        showland
+            Sets whether or not land masses are filled in color.
+        showocean
+            Sets whether or not oceans are filled in color.
+        showrivers
+            Sets whether or not rivers are drawn.
+        showsubunits
+            Sets whether or not boundaries of subunits within
+            countries (e.g. states, provinces) are drawn.
+        subunitcolor
+            Sets the color of the subunits boundaries.
+        subunitwidth
+            Sets the stroke width (in px) of the subunits
+            boundaries.
+        uirevision
+            Controls persistence of user-driven changes in the view
+            (projection and center). Defaults to
+            `layout.uirevision`.
+        visible
+            Sets the default visibility of the base layers.
+        
+Did you mean "visible"?
+
+Bad property path:
+minscale
+^^^^^^^^
+2025-02-26 15:59:19,280 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-02-26 15:59:21,164 - modules.data_collection - INFO - OTX client initialized
+2025-02-26 15:59:21,165 - modules.data_collection - INFO - VirusTotal client initialized
+2025-02-26 15:59:21,165 - __main__ - INFO - Successfully initialized DataCollector
+2025-02-26 15:59:21,168 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-02-26 15:59:21,227 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-02-26 15:59:21,227 - __main__ - INFO - Successfully initialized DashboardManager
+2025-02-26 15:59:21,392 - __main__ - INFO - Successfully initialized background tasks
+2025-02-26 15:59:21,394 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-02-26 15:59:22,689 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-02-26 15:59:24,510 - modules.data_collection - INFO - OTX client initialized
+2025-02-26 15:59:24,510 - modules.data_collection - INFO - VirusTotal client initialized
+2025-02-26 15:59:24,511 - __main__ - INFO - Successfully initialized DataCollector
+2025-02-26 15:59:24,516 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-02-26 15:59:24,526 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-02-26 15:59:24,526 - __main__ - INFO - Successfully initialized DashboardManager
+2025-02-26 15:59:24,630 - __main__ - INFO - Successfully initialized background tasks
+2025-02-26 16:01:09,786 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-02-26 16:01:11,531 - modules.data_collection - INFO - OTX client initialized
+2025-02-26 16:01:11,532 - modules.data_collection - INFO - VirusTotal client initialized
+2025-02-26 16:01:11,532 - __main__ - INFO - Successfully initialized DataCollector
+2025-02-26 16:01:11,536 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-02-26 16:01:11,596 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-02-26 16:01:11,596 - __main__ - INFO - Successfully initialized DashboardManager
+2025-02-26 16:01:11,726 - __main__ - INFO - Successfully initialized background tasks
+2025-02-26 16:02:05,221 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-02-26 16:02:07,498 - modules.data_collection - INFO - OTX client initialized
+2025-02-26 16:02:07,498 - modules.data_collection - INFO - VirusTotal client initialized
+2025-02-26 16:02:07,499 - __main__ - INFO - Successfully initialized DataCollector
+2025-02-26 16:02:07,502 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-02-26 16:02:07,560 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-02-26 16:02:07,561 - __main__ - INFO - Successfully initialized DashboardManager
+2025-02-26 16:02:07,701 - __main__ - INFO - Successfully initialized background tasks
