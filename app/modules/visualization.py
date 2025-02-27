@@ -376,7 +376,7 @@ class DashboardManager:
                             showland=True,
                             showcountries=True,
                             projection=dict(
-                                scale=1.3  # Set default zoom level
+                                scale=1.0  # Set default zoom level
                             ),
                             lonaxis=dict(showgrid=False),  # Remove grid in error state too
                             lataxis=dict(showgrid=False)
@@ -451,8 +451,8 @@ class DashboardManager:
                     values=list(counts_dict.values()),
                     textinfo='label+percent',
                     hoverinfo='label+value+percent',
-                    textposition='outside',
-                    hole=0,
+                    textposition='inside',
+                    hole=0.3,
                     marker=dict(
                         colors=[
                             '#FF9999',  # Light red
@@ -469,8 +469,15 @@ class DashboardManager:
                     direction='clockwise',
                     sort=False,
                     showlegend=False,
-                    textfont=dict(size=10),
-                    pull=[0.02] * len(threat_types)  # Reduced pull effect
+                    textfont=dict(
+                        size=10,
+                        color='white'
+                    ),
+                    insidetextorientation='horizontal',
+                    pull=[0.02] * len(threat_types),
+                    hovertemplate='%{label}<br>Count: %{value}<br>Percentage: %{percent}<extra></extra>',
+                    # Add uirevision to maintain state between updates
+                    uirevision='constant'
                 )])
                 
                 # Fixed layout configuration
@@ -478,8 +485,8 @@ class DashboardManager:
                     paper_bgcolor='rgba(0,0,0,0)',
                     plot_bgcolor='rgba(0,0,0,0)',
                     autosize=False,
-                    width=350,  # Fixed width
-                    height=350,  # Fixed height
+                    width=350,
+                    height=350,
                     margin=dict(
                         l=10,
                         r=10,
@@ -495,6 +502,11 @@ class DashboardManager:
                         minsize=8,
                         mode='hide'
                     ),
+                    # Enhanced transition settings
+                    transition={
+                        'duration': 750,
+                        'easing': 'cubic-in-out'
+                    },
                     xaxis=dict(
                         showgrid=False,
                         showticklabels=False,
@@ -508,7 +520,9 @@ class DashboardManager:
                         zeroline=False,
                         domain=[0, 1],
                         fixedrange=True
-                    )
+                    ),
+                    # Add uirevision to maintain state between updates
+                    uirevision='constant'
                 )
                 
                 return fig
@@ -1739,8 +1753,7 @@ class DashboardManager:
                                                 options=[
                                                     {"label": "Last 24 Hours", "value": "24h"},
                                                     {"label": "Last 7 Days", "value": "7d"},
-                                                    {"label": "Last 30 Days", "value": "30d"},
-                                                    {"label": "Custom Range", "value": "custom"}
+                                                    {"label": "Last 30 Days", "value": "30d"}
                                                 ],
                                                 value="24h",
                                                 className="mb-3"
