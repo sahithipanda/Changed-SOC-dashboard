@@ -2508,6 +2508,7 @@ class DashboardManager:
                 dbc.CardBody([
                     html.H5("Alert Notifications", className="mb-3 text-light"),
                     dbc.Row([
+                        # Critical Alerts Column
                         dbc.Col([
                             dbc.Label("Critical Alerts", className="text-light"),
                             dbc.Checklist(
@@ -2522,9 +2523,8 @@ class DashboardManager:
                                 switch=True,
                                 className="text-light"
                             ),
-                        ], width=12, className="mb-3"),
-                    ]),
-                    dbc.Row([
+                        ], md=4, className="mb-3"),
+                        # High Priority Alerts Column
                         dbc.Col([
                             dbc.Label("High Priority Alerts", className="text-light"),
                             dbc.Checklist(
@@ -2539,9 +2539,8 @@ class DashboardManager:
                                 switch=True,
                                 className="text-light"
                             ),
-                        ], width=12, className="mb-3"),
-                    ]),
-                    dbc.Row([
+                        ], md=4, className="mb-3"),
+                        # Medium Priority Alerts Column
                         dbc.Col([
                             dbc.Label("Medium Priority Alerts", className="text-light"),
                             dbc.Checklist(
@@ -2555,16 +2554,15 @@ class DashboardManager:
                                 switch=True,
                                 className="text-light"
                             ),
-                        ], width=12, className="mb-3"),
-                    ]),
+                        ], md=4, className="mb-3"),
+                    ], className="g-0"),  # g-0 removes gutters between columns
                 ], className="bg-dark")
             ], className="mb-4 border-0")
 
             return dbc.Container([
                 self._create_header("System Settings"),
                 dbc.Row([
-                    dbc.Col(notification_settings, md=6),
-                    dbc.Col(self._create_integration_settings(), md=6)
+                    dbc.Col(notification_settings, md=12)
                 ]),
                 dbc.Row([
                     dbc.Col(self._create_user_management(), md=12)
