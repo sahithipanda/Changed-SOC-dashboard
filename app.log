@@ -3112,3 +3112,11 @@ Allowed arguments: accessKey, aria-*, autoFocus, children, className, contentEdi
 2025-02-28 11:26:38,573 - modules.visualization - INFO - DashboardManager initialized successfully
 2025-02-28 11:26:38,577 - __main__ - INFO - Successfully initialized DashboardManager
 2025-02-28 11:26:38,803 - __main__ - INFO - Successfully initialized background tasks
+2025-02-28 11:30:59,441 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-02-28 11:31:05,372 - modules.data_collection - INFO - OTX client initialized
+2025-02-28 11:31:05,374 - modules.data_collection - INFO - VirusTotal client initialized
+2025-02-28 11:31:05,375 - __main__ - INFO - Successfully initialized DataCollector
+2025-02-28 11:31:05,375 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-02-28 11:31:05,416 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-02-28 11:31:05,416 - __main__ - INFO - Successfully initialized DashboardManager
+2025-02-28 11:31:05,729 - __main__ - INFO - Successfully initialized background tasks
