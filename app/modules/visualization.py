@@ -2860,7 +2860,7 @@ class DashboardManager:
                     id="threat-map",
                     config={
                         'displayModeBar': True,
-                        'scrollZoom': True,  # Enable scroll zoom
+                        'scrollZoom': False,  # Disable scroll zoom
                         'modeBarButtonsToRemove': [
                             'lasso2d', 
                             'select2d', 
