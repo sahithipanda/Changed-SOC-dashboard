@@ -1384,7 +1384,7 @@ class DashboardManager:
         """Create page header with title"""
         return html.Div([
             html.H1(title, className="header-title fade-in"),
-            html.P("Real-time monitoring and analysis", className="text-center mb-4 text-muted fade-in")
+            html.P("Real-time monitoring and analysis", className="text-center mb-4 text-danger fade-in")
         ], className="text-center mb-5")
 
     def _inject_custom_css(self):
