@@ -16,6 +16,8 @@ from reportlab.lib.pagesizes import letter
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.units import inch
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle
+import smtplib
+from twilio.rest import Client
 
 logger = logging.getLogger(__name__)
 
@@ -2516,10 +2518,12 @@ class DashboardManager:
                                 options=[
                                     {"label": "Email", "value": "email"},
                                     {"label": "SMS", "value": "sms"},
-                                    {"label": "Slack", "value": "slack"},
-                                    {"label": "Teams", "value": "teams"}
+                                    # Removed Slack option
+                                    # {"label": "Slack", "value": "slack"},
+                                    # Removed Teams option
+                                    # {"label": "Teams", "value": "teams"}
                                 ],
-                                value=["email", "sms", "slack"],
+                                value=["email", "sms"],
                                 switch=True,
                                 className="text-light"
                             ),
@@ -2532,10 +2536,12 @@ class DashboardManager:
                                 options=[
                                     {"label": "Email", "value": "email"},
                                     {"label": "SMS", "value": "sms"},
-                                    {"label": "Slack", "value": "slack"},
-                                    {"label": "Teams", "value": "teams"}
+                                    # Removed Slack option
+                                    # {"label": "Slack", "value": "slack"},
+                                    # Removed Teams option
+                                    # {"label": "Teams", "value": "teams"}
                                 ],
-                                value=["email", "slack"],
+                                value=["email"],
                                 switch=True,
                                 className="text-light"
                             ),
@@ -2547,8 +2553,10 @@ class DashboardManager:
                                 id="medium-alerts",
                                 options=[
                                     {"label": "Email", "value": "email"},
-                                    {"label": "Slack", "value": "slack"},
-                                    {"label": "Teams", "value": "teams"}
+                                    # Removed Slack option
+                                    # {"label": "Slack", "value": "slack"},
+                                    # Removed Teams option
+                                    # {"label": "Teams", "value": "teams"}
                                 ],
                                 value=["email"],
                                 switch=True,
@@ -3528,4 +3536,25 @@ IOCs:
                 dbc.Badge("", className=f"ml-2 bg-{color}", 
                          style={"width": "10px", "height": "10px", "border-radius": "50%"})
             ], className="mb-3")
-        ]) 
+        ])
+
+class AlertNotification:
+    def __init__(self, email, phone_number):
+        self.email = email
+        self.phone_number = phone_number
+
+    def send_email(self, subject, message):
+        with smtplib.SMTP('smtp.example.com', 587) as server:
+            server.starttls()
+            server.login("your_email@example.com", "your_password")
+            server.sendmail(self.email, self.email, f"Subject: {subject}\n\n{message}")
+
+    def send_sms(self, message):
+        client = Client("TWILIO_ACCOUNT_SID", "TWILIO_AUTH_TOKEN")
+        client.messages.create(
+            body=message,
+            from_="TWILIO_PHONE_NUMBER",
+            to=self.phone_number
+        )
+
+    
