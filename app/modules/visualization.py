@@ -297,25 +297,32 @@ class DashboardManager:
                 df = self._get_threat_data()
                 locations = self.data_generator.locations
                 
+                # Filter out threats with invalid locations
+                valid_threats = df[df['location'].isin(locations.keys())]
+                
                 fig = go.Figure()
                 
-                # Add threat points
-                fig.add_trace(go.Scattergeo(
-                    lon=[locations[loc]['lon'] for loc in df['location']],
-                    lat=[locations[loc]['lat'] for loc in df['location']],
-                    mode='markers',
-                    marker=dict(
-                        size=12,
-                        color=['red' if s == 'Critical' else 'orange' if s == 'High' else 'yellow' if s == 'Medium' else 'green' 
-                               for s in df['severity']],
-                        opacity=0.8,
-                        symbol='circle',
-                        line=dict(width=1, color='white')
-                    ),
-                    text=df.apply(lambda x: f"Location: {x['location']}<br>Type: {x['type']}<br>Severity: {x['severity']}", axis=1),
-                    hoverinfo='text',
-                    name='Threats'
-                ))
+                if not valid_threats.empty:
+                    # Add threat points only for valid locations
+                    fig.add_trace(go.Scattergeo(
+                        lon=[locations[loc]['lon'] for loc in valid_threats['location']],
+                        lat=[locations[loc]['lat'] for loc in valid_threats['location']],
+                        mode='markers',
+                        marker=dict(
+                            size=12,
+                            color=['red' if s == 'Critical' else 'orange' if s == 'High' else 'yellow' if s == 'Medium' else 'green' 
+                                   for s in valid_threats['severity']],
+                            opacity=0.8,
+                            symbol='circle',
+                            line=dict(width=1, color='white')
+                        ),
+                        text=valid_threats.apply(
+                            lambda x: f"ID: {x['id']}<br>Location: {x['location']}<br>Type: {x['type']}<br>Severity: {x['severity']}", 
+                            axis=1
+                        ),
+                        hoverinfo='text',
+                        name='Threats'
+                    ))
                 
                 # Update layout with fixed constraints
                 fig.update_layout(
@@ -332,24 +339,10 @@ class DashboardManager:
                         coastlinecolor='rgba(255, 255, 255, 0.2)',
                         showframe=False,
                         bgcolor='rgba(0,0,0,0)',
-                        # Set map center and zoom
-                        center=dict(
-                            lon=0,
-                            lat=20
-                        ),
-                        # Control zoom level
-                        projection=dict(
-                            scale=1.3  # Default zoom level
-                        ),
-                        # Set fixed ranges for lat/lon without grid
-                        lonaxis=dict(
-                            range=[-180, 180],
-                            showgrid=False  # Remove longitude grid
-                        ),
-                        lataxis=dict(
-                            range=[-60, 85],
-                            showgrid=False  # Remove latitude grid
-                        )
+                        center=dict(lon=0, lat=20),
+                        projection=dict(scale=1.3),
+                        lonaxis=dict(range=[-180, 180], showgrid=False),
+                        lataxis=dict(range=[-60, 85], showgrid=False)
                     ),
                     paper_bgcolor='rgba(0,0,0,0)',
                     plot_bgcolor='rgba(0,0,0,0)',
@@ -358,14 +351,12 @@ class DashboardManager:
                     height=500,
                     autosize=True,
                     hovermode='closest',
-                    dragmode='pan',  # Set default interaction mode to pan
-                    transition=dict(
-                        duration=500,
-                        easing='cubic-in-out'
-                    )
+                    dragmode='pan',
+                    transition=dict(duration=500, easing='cubic-in-out')
                 )
                 
                 return fig
+                
             except Exception as e:
                 logger.error(f"Error updating threat map: {e}")
                 # Return a basic world map if there's an error
@@ -377,13 +368,13 @@ class DashboardManager:
                             projection_type='equirectangular',
                             showland=True,
                             showcountries=True,
-                            projection=dict(
-                                scale=1.0  # Set default zoom level
-                            ),
-                            lonaxis=dict(showgrid=False),  # Remove grid in error state too
+                            projection=dict(scale=1.0),
+                            lonaxis=dict(showgrid=False),
                             lataxis=dict(showgrid=False)
                         ),
-                        height=500
+                        height=500,
+                        paper_bgcolor='rgba(0,0,0,0)',
+                        plot_bgcolor='rgba(0,0,0,0)'
                     )
                 )
 
@@ -1186,6 +1177,159 @@ class DashboardManager:
                 logger.error(f"Error updating active threats: {e}")
                 return html.Div("Error loading threats"), "Error"
 
+        @self.app.callback(
+            Output("threat-forecast", "figure"),
+            [Input("forecast-interval", "n_intervals")]
+        )
+        def update_threat_forecast(n):
+            """Update the threat forecast visualization"""
+            try:
+                # Import locally to avoid circular imports
+                from modules.ml_analysis import TimeSeriesAnalyzer
+                
+                # Initialize time series analyzer
+                analyzer = TimeSeriesAnalyzer()
+                
+                # Generate sample historical data for testing
+                end_time = datetime.now()
+                start_time = end_time - timedelta(days=7)
+                dates = pd.date_range(start=start_time, end=end_time, freq='h')  # Use 'h' instead of 'H'
+                
+                # Generate some sample threat counts (replace with actual data in production)
+                base_threats = 10.0  # Use float
+                for date in dates:
+                    # Add some randomness and daily pattern to the threat counts
+                    hour_factor = 1.0 + np.sin(date.hour * np.pi / 12.0) * 0.5  # Use floats
+                    random_factor = np.random.normal(1.0, 0.2)  # Use floats
+                    threat_count = max(0.0, float(base_threats * hour_factor * random_factor))
+                    analyzer.add_data_point(date, threat_count)
+                
+                # Generate forecast
+                forecast_result = analyzer.forecast()
+                
+                if not forecast_result['success']:
+                    return {
+                        'data': [],
+                        'layout': {
+                            'title': {'text': 'Insufficient data for forecast'},
+                            'height': 400,
+                            'paper_bgcolor': 'white',
+                            'plot_bgcolor': 'white',
+                            'annotations': [{
+                                'text': 'No forecast data available',
+                                'xref': 'paper',
+                                'yref': 'paper',
+                                'showarrow': False,
+                                'font': {'size': 14}
+                            }]
+                        }
+                    }
+                
+                # Create historical data trace
+                historical_trace = go.Scatter(
+                    x=analyzer.history['timestamp'],
+                    y=analyzer.history['threat_count'].astype(float),
+                    name='Historical',
+                    mode='lines+markers',
+                    line=dict(color='#1f77b4'),
+                    hovertemplate='%{x}<br>Threats: %{y:.1f}<extra></extra>'
+                )
+                
+                # Create forecast trace
+                forecast_times = [datetime.strptime(item['timestamp'], '%Y-%m-%d %H:%M:%S') 
+                                for item in forecast_result['forecast']]
+                forecast_values = [float(item['predicted_threats']) 
+                                 for item in forecast_result['forecast']]
+                
+                forecast_trace = go.Scatter(
+                    x=forecast_times,
+                    y=forecast_values,
+                    name='Forecast',
+                    mode='lines',
+                    line=dict(color='#ff7f0e', dash='dash'),
+                    hovertemplate='%{x}<br>Predicted Threats: %{y:.1f}<extra></extra>'
+                )
+                
+                traces = [historical_trace, forecast_trace]
+                
+                # Add confidence intervals if available
+                confidence_intervals = forecast_result.get('confidence_intervals')
+                if confidence_intervals:
+                    upper_bound = go.Scatter(
+                        x=forecast_times,
+                        y=confidence_intervals['upper'],
+                        name='Upper Bound',
+                        mode='lines',
+                        line=dict(width=0),
+                        showlegend=False,
+                        hoverinfo='skip'
+                    )
+                    
+                    lower_bound = go.Scatter(
+                        x=forecast_times,
+                        y=confidence_intervals['lower'],
+                        name='Lower Bound',
+                        mode='lines',
+                        line=dict(width=0),
+                        fillcolor='rgba(255, 127, 14, 0.2)',
+                        fill='tonexty',
+                        showlegend=False,
+                        hoverinfo='skip'
+                    )
+                    
+                    traces.extend([upper_bound, lower_bound])
+                
+                layout = go.Layout(
+                    title={'text': 'Threat Forecast (Next 24 Hours)', 'x': 0.5},
+                    xaxis=dict(
+                        title='Time',
+                        showgrid=True,
+                        gridcolor='rgba(0,0,0,0.1)',
+                        zeroline=True,
+                        zerolinecolor='rgba(0,0,0,0.2)'
+                    ),
+                    yaxis=dict(
+                        title='Number of Threats',
+                        showgrid=True,
+                        gridcolor='rgba(0,0,0,0.1)',
+                        rangemode='nonnegative',
+                        zeroline=True,
+                        zerolinecolor='rgba(0,0,0,0.2)'
+                    ),
+                    hovermode='x unified',
+                    showlegend=True,
+                    legend=dict(
+                        x=0,
+                        y=1,
+                        bgcolor='rgba(255,255,255,0.8)'
+                    ),
+                    margin=dict(l=60, r=20, t=40, b=40),
+                    height=400,
+                    paper_bgcolor='white',
+                    plot_bgcolor='white'
+                )
+                
+                return {'data': traces, 'layout': layout}
+                
+            except Exception as e:
+                print(f"Error updating threat forecast: {e}")
+                return {
+                    'data': [],
+                    'layout': {
+                        'title': {'text': 'Error Loading Forecast'},
+                        'height': 400,
+                        'paper_bgcolor': 'white',
+                        'plot_bgcolor': 'white',
+                        'annotations': [{
+                            'text': str(e),
+                            'xref': 'paper',
+                            'yref': 'paper',
+                            'showarrow': False,
+                            'font': {'size': 14}
+                        }]
+                    }
+                }
+
     def _get_recent_reports(self):
         """Get list of recent reports with actual timestamps"""
         current_time = datetime.now()
@@ -1632,6 +1776,7 @@ class DashboardManager:
                     dbc.Col([
                         self._create_threat_map(),
                         self._create_trend_analysis(),
+                        self._create_threat_forecast(),  # Add forecast visualization
                     ], md=8),
                     dbc.Col([
                         self._create_threat_distribution(),
@@ -3538,6 +3683,7 @@ IOCs:
             ], className="mb-3")
         ])
 
+<<<<<<< Updated upstream
 class AlertNotification:
     def __init__(self, email, phone_number):
         self.email = email
@@ -3558,3 +3704,43 @@ class AlertNotification:
         )
 
     
+=======
+    def _create_threat_forecast(self):
+        """Create threat forecast visualization using ARIMA"""
+        return dbc.Card([
+            dbc.CardHeader([
+                html.H3("Threat Forecast", className="mb-0"),
+                html.Small("24-hour prediction using ARIMA model", className="text-muted")
+            ]),
+            dbc.CardBody([
+                dcc.Loading(
+                    id="loading-forecast",
+                    type="circle",
+                    children=[
+                        dcc.Graph(
+                            id="threat-forecast",
+                            config={
+                                'displayModeBar': True,
+                                'displaylogo': False,
+                                'modeBarButtonsToRemove': ['lasso2d', 'select2d']
+                            },
+                            figure={
+                                'data': [],
+                                'layout': {
+                                    'title': {'text': 'Loading forecast data...'},
+                                    'height': 400,
+                                    'paper_bgcolor': 'white',
+                                    'plot_bgcolor': 'white'
+                                }
+                            }
+                        )
+                    ]
+                ),
+                dcc.Interval(
+                    id='forecast-interval',
+                    interval=60*60*1000,  # Update every hour
+                    n_intervals=0
+                )
+            ])
+        ], className="mb-4")
+>>>>>>> Stashed changes
