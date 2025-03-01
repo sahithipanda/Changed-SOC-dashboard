@@ -5957,3 +5957,101 @@ Allowed arguments: animated, bar, children, className, class_name, color, hide_l
 2025-03-01 22:22:50,053 - __main__ - INFO - Successfully initialized background tasks
 2025-03-01 22:37:56,421 - modules.visualization - ERROR - Error updating recent alerts: index 6 is out of bounds for axis 0 with size 6
 >>>>>>> Stashed changes
+2025-03-01 23:09:45,733 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-03-01 23:10:07,598 - __main__ - ERROR - Error importing MLAnalyzer from ml_analysis: No module named 'torch'
+2025-03-01 23:10:07,653 - __main__ - ERROR - Unexpected error importing DashboardManager from visualization: invalid syntax (visualization.py, line 3686)
+2025-03-01 23:10:07,780 - modules.data_collection - INFO - OTX client initialized
+2025-03-01 23:10:07,780 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-01 23:10:07,781 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-01 23:10:07,898 - __main__ - WARNING - Background tasks disabled: required modules not available
+2025-03-01 23:10:07,899 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-03-01 23:10:09,445 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-03-01 23:10:10,844 - __main__ - ERROR - Error importing MLAnalyzer from ml_analysis: No module named 'torch'
+2025-03-01 23:10:10,893 - __main__ - ERROR - Unexpected error importing DashboardManager from visualization: invalid syntax (visualization.py, line 3686)
+2025-03-01 23:10:11,018 - modules.data_collection - INFO - OTX client initialized
+2025-03-01 23:10:11,018 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-01 23:10:11,018 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-01 23:10:11,029 - __main__ - WARNING - Background tasks disabled: required modules not available
+2025-03-01 23:12:23,718 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-03-01 23:12:25,058 - __main__ - ERROR - Error importing MLAnalyzer from ml_analysis: No module named 'torch'
+2025-03-01 23:12:26,667 - modules.data_collection - INFO - OTX client initialized
+2025-03-01 23:12:26,668 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-01 23:12:26,668 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-01 23:12:26,680 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-01 23:12:26,680 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-01 23:12:26,681 - __main__ - WARNING - Background tasks disabled: required modules not available
+2025-03-01 23:12:26,683 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-03-01 23:12:27,835 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-03-01 23:12:29,204 - __main__ - ERROR - Error importing MLAnalyzer from ml_analysis: No module named 'torch'
+2025-03-01 23:12:29,600 - modules.data_collection - INFO - OTX client initialized
+2025-03-01 23:12:29,601 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-01 23:12:29,601 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-01 23:12:29,612 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-01 23:12:29,612 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-01 23:12:29,613 - __main__ - WARNING - Background tasks disabled: required modules not available
+2025-03-01 23:13:10,296 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-03-01 23:13:11,666 - __main__ - ERROR - Error importing MLAnalyzer from ml_analysis: No module named 'torch'
+2025-03-01 23:13:12,039 - modules.data_collection - INFO - OTX client initialized
+2025-03-01 23:13:12,040 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-01 23:13:12,040 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-01 23:13:12,052 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-01 23:13:12,052 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-01 23:13:12,053 - __main__ - WARNING - Background tasks disabled: required modules not available
+2025-03-01 23:13:14,763 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-03-01 23:13:16,219 - __main__ - ERROR - Error importing MLAnalyzer from ml_analysis: No module named 'torch'
+2025-03-01 23:13:16,613 - modules.data_collection - INFO - OTX client initialized
+2025-03-01 23:13:16,615 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-01 23:13:16,615 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-01 23:13:16,626 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-01 23:13:16,626 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-01 23:13:16,627 - __main__ - WARNING - Background tasks disabled: required modules not available
+2025-03-01 23:13:37,695 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-03-01 23:13:39,104 - __main__ - ERROR - Error importing MLAnalyzer from ml_analysis: No module named 'torch'
+2025-03-01 23:13:39,509 - modules.data_collection - INFO - OTX client initialized
+2025-03-01 23:13:39,511 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-01 23:13:39,511 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-01 23:13:39,522 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-01 23:13:39,523 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-01 23:13:39,523 - __main__ - WARNING - Background tasks disabled: required modules not available
+2025-03-01 23:13:43,432 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-03-01 23:13:44,938 - __main__ - ERROR - Error importing MLAnalyzer from ml_analysis: No module named 'torch'
+2025-03-01 23:13:45,317 - modules.data_collection - INFO - OTX client initialized
+2025-03-01 23:13:45,317 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-01 23:13:45,318 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-01 23:13:45,328 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-01 23:13:45,329 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-01 23:13:45,329 - __main__ - WARNING - Background tasks disabled: required modules not available
+2025-03-01 23:14:32,135 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-03-01 23:14:33,763 - __main__ - ERROR - Error importing MLAnalyzer from ml_analysis: No module named 'torch._C'
+2025-03-01 23:14:34,193 - modules.data_collection - INFO - OTX client initialized
+2025-03-01 23:14:34,195 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-01 23:14:34,195 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-01 23:14:34,212 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-01 23:14:34,212 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-01 23:14:34,213 - __main__ - WARNING - Background tasks disabled: required modules not available
+2025-03-01 23:14:42,617 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-03-01 23:14:44,054 - __main__ - ERROR - Error importing MLAnalyzer from ml_analysis: No module named 'torch._C'
+2025-03-01 23:14:44,448 - modules.data_collection - INFO - OTX client initialized
+2025-03-01 23:14:44,448 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-01 23:14:44,448 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-01 23:14:44,460 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-01 23:14:44,461 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-01 23:14:44,461 - __main__ - WARNING - Background tasks disabled: required modules not available
+2025-03-01 23:14:50,938 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-03-01 23:15:13,614 - modules.data_collection - INFO - OTX client initialized
+2025-03-01 23:15:13,614 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-01 23:15:13,615 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-01 23:15:13,632 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-01 23:15:13,642 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-01 23:15:13,643 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-01 23:15:14,586 - __main__ - INFO - Successfully initialized background tasks
+2025-03-01 23:15:20,194 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-03-01 23:15:36,414 - modules.data_collection - INFO - OTX client initialized
+2025-03-01 23:15:36,416 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-01 23:15:36,417 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-01 23:15:36,426 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-01 23:15:36,475 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-01 23:15:36,476 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-01 23:15:36,738 - __main__ - INFO - Successfully initialized background tasks

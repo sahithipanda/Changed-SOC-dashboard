@@ -3683,28 +3683,6 @@ IOCs:
             ], className="mb-3")
         ])
 
-<<<<<<< Updated upstream
-class AlertNotification:
-    def __init__(self, email, phone_number):
-        self.email = email
-        self.phone_number = phone_number
-
-    def send_email(self, subject, message):
-        with smtplib.SMTP('smtp.example.com', 587) as server:
-            server.starttls()
-            server.login("your_email@example.com", "your_password")
-            server.sendmail(self.email, self.email, f"Subject: {subject}\n\n{message}")
-
-    def send_sms(self, message):
-        client = Client("TWILIO_ACCOUNT_SID", "TWILIO_AUTH_TOKEN")
-        client.messages.create(
-            body=message,
-            from_="TWILIO_PHONE_NUMBER",
-            to=self.phone_number
-        )
-
-    
-=======
     def _create_threat_forecast(self):
         """Create threat forecast visualization using ARIMA"""
         return dbc.Card([
@@ -3743,4 +3721,22 @@ class AlertNotification:
                 )
             ])
         ], className="mb-4")
->>>>>>> Stashed changes
+
+class AlertNotification:
+    def __init__(self, email, phone_number):
+        self.email = email
+        self.phone_number = phone_number
+
+    def send_email(self, subject, message):
+        pass
+
+    def send_sms(self, message):
+        pass
+
+    def _create_threat_forecast(self):
+        """Create threat forecast visualization using ARIMA"""
+        return dbc.Card([
+            dbc.CardHeader([
+                # Card content here
+            ]),
+        ], className="mb-4")
