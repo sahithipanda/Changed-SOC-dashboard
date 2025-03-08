@@ -18,6 +18,7 @@ from reportlab.lib.units import inch
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle
 import smtplib
 from twilio.rest import Client
+from statsmodels.tsa.statespace.sarimax import SARIMAX
 
 logger = logging.getLogger(__name__)
 
@@ -1280,7 +1281,7 @@ class DashboardManager:
                     traces.extend([upper_bound, lower_bound])
                 
                 layout = go.Layout(
-                    title={'text': 'Threat Forecast (Next 24 Hours)', 'x': 0.5},
+                    title={'text': 'Threat Forecast (Next 48 Hours)', 'x': 0.5},
                     xaxis=dict(
                         title='Time',
                         showgrid=True,
