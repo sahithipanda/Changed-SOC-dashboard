@@ -12,9 +12,10 @@ REDDIT_AVAILABLE = False
 try:
     import praw
     REDDIT_AVAILABLE = True
-    logger.info("Reddit integration available")
+    # logger.info("Reddit integration available")
 except ImportError as e:
     logger.warning(f"Reddit integration not available: {e}")
+    # logger.warning(f"")
 
 class TwitterAPIv2Client:
     """Simple Twitter API v2 client"""
@@ -79,14 +80,16 @@ class DataCollector:
         try:
             if self.config.get('otx_api_key'):
                 self.otx_client = OTXClient(self.config['otx_api_key'])
-                logger.info("OTX client initialized")
+                # logger.info("OTX client initialized")
+                # logger.info("")
         except Exception as e:
             logger.error(f"Failed to initialize OTX client: {e}")
         
         try:
             if self.config.get('vt_api_key'):
                 self.vt_client = VirusTotalClient(self.config['vt_api_key'])
-                logger.info("VirusTotal client initialized")
+                # logger.info("VirusTotal client initialized")
+                # logger.info("")
         except Exception as e:
             logger.error(f"Failed to initialize VirusTotal client: {e}")
         
@@ -97,7 +100,7 @@ class DataCollector:
                     self.config['twitter_api_key'],
                     self.config['twitter_api_secret']
                 )
-                logger.info("Twitter client initialized")
+                # logger.info("Twitter client initialized")
         except Exception as e:
             logger.error(f"Failed to initialize Twitter client: {e}")
         

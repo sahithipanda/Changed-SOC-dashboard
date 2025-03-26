@@ -324,7 +324,8 @@ def start_background_tasks():
         logger.info("Successfully initialized background tasks with Redis")
         return celery
     except redis.ConnectionError:
-        logger.warning("Redis not available. Running in standalone mode without background tasks.")
+        # logger.warning("Redis not available. Running in standalone mode without background tasks.")
+        # logger.warning("")
         return None
     except Exception as e:
         logger.error(f"Error setting up background tasks: {e}")

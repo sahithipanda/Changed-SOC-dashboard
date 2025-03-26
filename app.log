@@ -7568,3 +7568,46 @@ Allowed arguments: animated, bar, children, className, class_name, color, hide_l
 2025-03-27 00:09:57,624 - __main__ - WARNING - Redis not available. Running in standalone mode without background tasks.
 2025-03-27 00:09:57,625 - dash.dash - INFO - Dash is running on http://localhost:8050/
 
+2025-03-27 00:14:01,214 - modules.data_collection - INFO - Reddit integration available
+2025-03-27 00:14:05,004 - modules.data_collection - INFO - OTX client initialized
+2025-03-27 00:14:05,004 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-27 00:14:05,004 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-27 00:14:05,016 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-27 00:14:05,016 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-27 00:14:05,016 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-27 00:14:09,341 - __main__ - WARNING - Redis not available. Running in standalone mode without background tasks.
+2025-03-27 00:14:09,341 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-03-27 00:22:29,013 - modules.data_collection - INFO - Reddit integration available
+2025-03-27 00:22:32,904 - modules.data_collection - INFO - OTX client initialized
+2025-03-27 00:22:32,904 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-27 00:22:32,904 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-27 00:22:32,909 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-27 00:22:32,915 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-27 00:22:32,916 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-27 00:22:37,260 - __main__ - WARNING - Redis not available. Running in standalone mode without background tasks.
+2025-03-27 00:22:37,264 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-03-27 00:22:53,317 - modules.data_collection - INFO - Reddit integration available
+2025-03-27 00:22:56,872 - modules.data_collection - INFO - 
+2025-03-27 00:22:56,872 - modules.data_collection - INFO - 
+2025-03-27 00:22:56,872 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-27 00:22:56,876 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-27 00:22:56,876 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-27 00:22:56,876 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-27 00:23:01,151 - __main__ - WARNING - 
+2025-03-27 00:23:01,154 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-03-27 00:25:55,704 - modules.data_collection - INFO - 
+2025-03-27 00:25:55,704 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-27 00:25:55,705 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-27 00:25:55,717 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-27 00:25:55,719 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-27 00:25:59,998 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-03-27 00:26:41,829 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-27 00:26:41,834 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-27 00:26:41,839 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-27 00:26:41,839 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-27 00:26:46,146 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
