@@ -285,10 +285,15 @@ def start_background_tasks():
     """Start background tasks for data collection and analysis"""
     if not (data_collector and ml_analyzer):
         logger.warning("Background tasks disabled: required modules not available")
-        return
+        return None
     
     try:
         from celery import Celery
+        import redis
+        
+        # Test Redis connection first
+        redis_client = redis.Redis(host='localhost', port=6379, db=0)
+        redis_client.ping()
         
         celery = Celery('cti_platform',
                         broker='redis://localhost:6379/0',
@@ -316,13 +321,38 @@ def start_background_tasks():
             }
         }
         
-        logger.info("Successfully initialized background tasks")
+        logger.info("Successfully initialized background tasks with Redis")
+        return celery
+    except redis.ConnectionError:
+        logger.warning("Redis not available. Running in standalone mode without background tasks.")
+        return None
     except Exception as e:
         logger.error(f"Error setting up background tasks: {e}")
+        return None
 
 if __name__ == '__main__':
-    # Start background tasks
-    start_background_tasks()
-    
-    # Run the application
-    app.run_server(debug=True, host='localhost', port=8050)
+    try:
+        # Start background tasks
+        celery_app = start_background_tasks()
+        
+        # Run the application with proper error handling
+        app.run_server(
+            debug=True,
+            host='localhost',
+            port=8050,
+            use_reloader=False  # Disable reloader to prevent duplicate threads
+        )
+    except Exception as e:
+        logger.error(f"Error starting server: {e}")
+        if celery_app:
+            try:
+                celery_app.control.shutdown()
+            except Exception as shutdown_error:
+                logger.error(f"Error shutting down Celery: {shutdown_error}")
+    finally:
+        # Cleanup
+        if celery_app:
+            try:
+                celery_app.control.shutdown()
+            except Exception as shutdown_error:
+                logger.error(f"Error shutting down Celery: {shutdown_error}")

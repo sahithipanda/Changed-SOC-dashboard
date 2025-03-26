@@ -7255,3 +7255,316 @@ Allowed arguments: animated, bar, children, className, class_name, color, hide_l
 2025-03-24 18:29:13,989 - modules.visualization - INFO - DashboardManager initialized successfully
 2025-03-24 18:29:13,991 - __main__ - INFO - Successfully initialized DashboardManager
 2025-03-24 18:29:15,560 - __main__ - INFO - Successfully initialized background tasks
+2025-03-26 22:37:02,406 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-03-26 22:37:35,566 - modules.data_collection - INFO - OTX client initialized
+2025-03-26 22:37:35,566 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-26 22:37:35,572 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-26 22:37:35,575 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-26 22:37:35,582 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-26 22:37:35,582 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-26 22:37:36,656 - __main__ - INFO - Successfully initialized background tasks
+2025-03-26 22:37:36,658 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-03-26 22:37:38,063 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-03-26 22:37:41,832 - modules.data_collection - INFO - OTX client initialized
+2025-03-26 22:37:41,832 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-26 22:37:41,832 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-26 22:37:41,834 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-26 22:37:41,840 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-26 22:37:41,840 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-26 22:37:42,040 - __main__ - INFO - Successfully initialized background tasks
+2025-03-26 22:37:52,556 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-03-26 22:37:56,546 - modules.data_collection - INFO - OTX client initialized
+2025-03-26 22:37:56,547 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-26 22:37:56,547 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-26 22:37:56,550 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-26 22:37:56,556 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-26 22:37:56,556 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-26 22:37:56,744 - __main__ - INFO - Successfully initialized background tasks
+2025-03-26 22:37:59,697 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-03-26 22:38:03,432 - modules.data_collection - INFO - OTX client initialized
+2025-03-26 22:38:03,433 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-26 22:38:03,433 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-26 22:38:03,437 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-26 22:38:03,448 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-26 22:38:03,449 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-26 22:38:03,693 - __main__ - INFO - Successfully initialized background tasks
+2025-03-26 22:38:06,641 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-03-26 22:38:10,200 - modules.data_collection - INFO - OTX client initialized
+2025-03-26 22:38:10,216 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-26 22:38:10,216 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-26 22:38:10,218 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-26 22:38:10,224 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-26 22:38:10,224 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-26 22:38:10,424 - __main__ - INFO - Successfully initialized background tasks
+2025-03-26 22:38:14,432 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-03-26 22:38:18,034 - modules.data_collection - INFO - OTX client initialized
+2025-03-26 22:38:18,034 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-26 22:38:18,037 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-26 22:38:18,037 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-26 22:38:18,044 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-26 22:38:18,044 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-26 22:38:18,225 - __main__ - INFO - Successfully initialized background tasks
+2025-03-26 22:38:20,954 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-03-26 22:38:24,361 - modules.data_collection - INFO - OTX client initialized
+2025-03-26 22:38:24,363 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-26 22:38:24,363 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-26 22:38:24,366 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-26 22:38:24,371 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-26 22:38:24,371 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-26 22:38:24,544 - __main__ - INFO - Successfully initialized background tasks
+2025-03-26 22:41:16,688 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-03-26 22:41:20,413 - modules.data_collection - INFO - OTX client initialized
+2025-03-26 22:41:20,413 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-26 22:41:20,413 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-26 22:41:20,413 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-26 22:41:20,430 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-26 22:41:20,430 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-26 22:41:20,712 - __main__ - INFO - Successfully initialized background tasks
+2025-03-26 22:41:22,671 - modules.visualization - ERROR - Error updating trend analysis: index 6 is out of bounds for axis 0 with size 6
+2025-03-26 22:44:05,463 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-03-26 22:44:10,472 - modules.data_collection - INFO - OTX client initialized
+2025-03-26 22:44:10,472 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-26 22:44:10,472 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-26 22:44:10,483 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-26 22:44:10,490 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-26 22:44:10,490 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-26 22:44:10,701 - __main__ - INFO - Successfully initialized background tasks
+2025-03-26 22:44:10,701 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-03-26 22:44:11,895 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-03-26 22:44:15,999 - modules.data_collection - INFO - OTX client initialized
+2025-03-26 22:44:15,999 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-26 22:44:15,999 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-26 22:44:16,005 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-26 22:44:16,033 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-26 22:44:16,033 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-26 22:44:16,229 - __main__ - INFO - Successfully initialized background tasks
+2025-03-26 22:44:27,316 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-03-26 22:44:31,030 - modules.data_collection - INFO - OTX client initialized
+2025-03-26 22:44:31,032 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-26 22:44:31,033 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-26 22:44:31,036 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-26 22:44:31,041 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-26 22:44:31,041 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-26 22:44:31,236 - __main__ - INFO - Successfully initialized background tasks
+2025-03-26 22:44:31,398 - modules.visualization - ERROR - Error updating recent alerts: index 6 is out of bounds for axis 0 with size 6
+2025-03-26 22:44:34,534 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-03-26 22:44:38,850 - modules.data_collection - INFO - OTX client initialized
+2025-03-26 22:44:38,850 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-26 22:44:38,850 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-26 22:44:38,855 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-26 22:44:38,862 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-26 22:44:38,862 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-26 22:44:39,070 - __main__ - INFO - Successfully initialized background tasks
+2025-03-26 22:44:42,807 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-03-26 22:44:46,696 - modules.data_collection - INFO - OTX client initialized
+2025-03-26 22:44:46,696 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-26 22:44:46,697 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-26 22:44:46,699 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-26 22:44:46,704 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-26 22:44:46,704 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-26 22:44:46,899 - __main__ - INFO - Successfully initialized background tasks
+2025-03-26 22:44:50,256 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-03-26 22:44:54,104 - modules.data_collection - INFO - OTX client initialized
+2025-03-26 22:44:54,105 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-26 22:44:54,106 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-26 22:44:54,108 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-26 22:44:54,115 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-26 22:44:54,115 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-26 22:44:54,308 - __main__ - INFO - Successfully initialized background tasks
+2025-03-26 22:44:57,947 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-03-26 22:45:01,643 - modules.data_collection - INFO - OTX client initialized
+2025-03-26 22:45:01,643 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-26 22:45:01,643 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-26 22:45:01,643 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-26 22:45:01,652 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-26 22:45:01,652 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-26 22:45:01,848 - __main__ - INFO - Successfully initialized background tasks
+2025-03-26 22:45:08,890 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-03-26 22:45:12,478 - modules.data_collection - INFO - OTX client initialized
+2025-03-26 22:45:12,478 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-26 22:45:12,478 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-26 22:45:12,485 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-26 22:45:12,490 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-26 22:45:12,491 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-26 22:45:12,621 - __main__ - INFO - Successfully initialized background tasks
+2025-03-26 22:45:27,441 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-03-26 22:45:31,238 - modules.data_collection - INFO - OTX client initialized
+2025-03-26 22:45:31,239 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-26 22:45:31,239 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-26 22:45:31,242 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-26 22:45:31,248 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-26 22:45:31,249 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-26 22:45:31,428 - __main__ - INFO - Successfully initialized background tasks
+2025-03-26 22:45:37,871 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-03-26 22:45:41,900 - modules.data_collection - INFO - OTX client initialized
+2025-03-26 22:45:41,900 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-26 22:45:41,900 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-26 22:45:41,900 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-26 22:45:41,910 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-26 22:45:41,910 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-26 22:45:42,122 - __main__ - INFO - Successfully initialized background tasks
+2025-03-26 22:45:44,071 - modules.visualization - ERROR - Error updating threat map: index 7 is out of bounds for axis 0 with size 6
+2025-03-26 22:45:49,646 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-03-26 22:45:53,719 - modules.data_collection - INFO - OTX client initialized
+2025-03-26 22:45:53,719 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-26 22:45:53,719 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-26 22:45:53,719 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-26 22:45:53,728 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-26 22:45:53,728 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-26 22:45:53,931 - __main__ - INFO - Successfully initialized background tasks
+2025-03-26 22:45:56,872 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-03-26 22:46:00,857 - modules.data_collection - INFO - OTX client initialized
+2025-03-26 22:46:00,859 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-26 22:46:00,859 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-26 22:46:00,859 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-26 22:46:00,870 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-26 22:46:00,871 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-26 22:46:01,108 - __main__ - INFO - Successfully initialized background tasks
+2025-03-26 22:46:04,425 - modules.data_collection - WARNING - Reddit integration not available: No module named 'praw'
+2025-03-26 22:46:08,568 - modules.data_collection - INFO - OTX client initialized
+2025-03-26 22:46:08,568 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-26 22:46:08,568 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-26 22:46:08,572 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-26 22:46:08,577 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-26 22:46:08,578 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-26 22:46:08,774 - __main__ - INFO - Successfully initialized background tasks
+2025-03-26 22:49:13,388 - modules.data_collection - INFO - Reddit integration available
+2025-03-26 22:50:01,447 - modules.data_collection - INFO - OTX client initialized
+2025-03-26 22:50:01,448 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-26 22:50:01,448 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-26 22:50:01,451 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-26 22:50:01,457 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-26 22:50:01,458 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-26 22:50:03,155 - __main__ - INFO - Successfully initialized background tasks
+2025-03-26 22:54:50,237 - modules.data_collection - INFO - Reddit integration available
+2025-03-26 22:54:53,834 - modules.data_collection - INFO - OTX client initialized
+2025-03-26 22:54:53,834 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-26 22:54:53,834 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-26 22:54:53,837 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-26 22:54:53,841 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-26 22:54:53,843 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-26 22:54:54,025 - __main__ - INFO - Successfully initialized background tasks
+2025-03-26 22:56:51,344 - modules.data_collection - INFO - Reddit integration available
+2025-03-26 22:56:55,214 - modules.data_collection - INFO - OTX client initialized
+2025-03-26 22:56:55,216 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-26 22:56:55,216 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-26 22:56:55,219 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-26 22:56:55,224 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-26 22:56:55,224 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-26 22:56:55,412 - __main__ - INFO - Successfully initialized background tasks
+2025-03-26 22:57:31,812 - modules.data_collection - INFO - Reddit integration available
+2025-03-26 22:57:35,688 - modules.data_collection - INFO - OTX client initialized
+2025-03-26 22:57:35,688 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-26 22:57:35,688 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-26 22:57:35,691 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-26 22:57:35,697 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-26 22:57:35,697 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-26 22:57:35,933 - __main__ - INFO - Successfully initialized background tasks
+2025-03-26 22:58:21,624 - modules.data_collection - INFO - Reddit integration available
+2025-03-26 22:58:25,761 - modules.data_collection - INFO - OTX client initialized
+2025-03-26 22:58:25,761 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-26 22:58:25,761 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-26 22:58:25,761 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-26 22:58:25,761 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-26 22:58:25,761 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-26 22:58:25,995 - __main__ - INFO - Successfully initialized background tasks
+2025-03-26 23:00:32,173 - modules.data_collection - INFO - Reddit integration available
+2025-03-26 23:00:36,038 - modules.data_collection - INFO - OTX client initialized
+2025-03-26 23:00:36,038 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-26 23:00:36,039 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-26 23:00:36,040 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-26 23:00:36,047 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-26 23:00:36,047 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-26 23:00:36,238 - __main__ - INFO - Successfully initialized background tasks
+2025-03-26 23:05:00,376 - modules.data_collection - INFO - Reddit integration available
+2025-03-26 23:05:04,289 - modules.data_collection - INFO - OTX client initialized
+2025-03-26 23:05:04,289 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-26 23:05:04,289 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-26 23:05:04,289 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-26 23:05:04,305 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-26 23:05:04,307 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-26 23:05:04,497 - __main__ - INFO - Successfully initialized background tasks
+2025-03-26 23:05:06,523 - modules.visualization - ERROR - Error updating threat map: index 7 is out of bounds for axis 0 with size 6
+2025-03-26 23:05:45,007 - modules.data_collection - INFO - Reddit integration available
+2025-03-26 23:05:49,772 - modules.data_collection - INFO - OTX client initialized
+2025-03-26 23:05:49,774 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-26 23:05:49,774 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-26 23:05:49,780 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-26 23:05:49,791 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-26 23:05:49,791 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-26 23:05:50,061 - __main__ - INFO - Successfully initialized background tasks
+2025-03-26 23:06:03,033 - modules.data_collection - INFO - Reddit integration available
+2025-03-26 23:06:06,833 - modules.data_collection - INFO - OTX client initialized
+2025-03-26 23:06:06,834 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-26 23:06:06,834 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-26 23:06:06,838 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-26 23:06:06,846 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-26 23:06:06,847 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-26 23:06:07,033 - __main__ - INFO - Successfully initialized background tasks
+2025-03-26 23:06:13,135 - modules.visualization - ERROR - Error updating active threats: 'DashboardManager' object has no attribute '_create_active_threats_list'
+2025-03-26 23:06:15,900 - modules.visualization - ERROR - Error updating active threats: 'DashboardManager' object has no attribute '_create_active_threats_list'
+2025-03-26 23:06:43,256 - modules.visualization - ERROR - Error updating active threats: 'DashboardManager' object has no attribute '_create_active_threats_list'
+2025-03-26 23:07:14,137 - modules.visualization - ERROR - Error updating active threats: 'DashboardManager' object has no attribute '_create_active_threats_list'
+2025-03-26 23:08:38,795 - modules.data_collection - INFO - Reddit integration available
+2025-03-26 23:08:42,619 - modules.data_collection - INFO - OTX client initialized
+2025-03-26 23:08:42,619 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-26 23:08:42,619 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-26 23:08:42,619 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-26 23:08:42,635 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-26 23:08:42,635 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-26 23:08:42,840 - __main__ - INFO - Successfully initialized background tasks
+2025-03-26 23:11:34,285 - modules.visualization - ERROR - Error updating threat map: tuple index out of range
+2025-03-26 23:14:29,947 - modules.data_collection - INFO - Reddit integration available
+2025-03-26 23:14:34,624 - modules.data_collection - INFO - OTX client initialized
+2025-03-26 23:14:34,624 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-26 23:14:34,624 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-26 23:14:34,624 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-26 23:14:34,639 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-26 23:14:34,639 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-26 23:14:34,854 - __main__ - INFO - Successfully initialized background tasks
+2025-03-26 23:14:44,513 - modules.data_collection - INFO - Reddit integration available
+2025-03-26 23:14:48,513 - modules.data_collection - INFO - OTX client initialized
+2025-03-26 23:14:48,513 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-26 23:14:48,513 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-26 23:14:48,515 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-26 23:14:48,522 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-26 23:14:48,522 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-26 23:14:48,722 - __main__ - INFO - Successfully initialized background tasks
+2025-03-26 23:14:53,159 - modules.data_collection - INFO - Reddit integration available
+2025-03-26 23:14:56,744 - modules.data_collection - INFO - OTX client initialized
+2025-03-26 23:14:56,744 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-26 23:14:56,744 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-26 23:14:56,746 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-26 23:14:56,753 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-26 23:14:56,753 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-26 23:14:56,931 - __main__ - INFO - Successfully initialized background tasks
+2025-03-26 23:17:07,061 - modules.data_collection - INFO - Reddit integration available
+2025-03-26 23:17:11,023 - modules.data_collection - INFO - OTX client initialized
+2025-03-26 23:17:11,023 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-26 23:17:11,023 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-26 23:17:11,029 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-26 23:17:11,034 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-26 23:17:11,035 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-26 23:17:11,211 - __main__ - INFO - Successfully initialized background tasks
+2025-03-27 00:09:06,514 - modules.data_collection - INFO - Reddit integration available
+2025-03-27 00:09:11,126 - modules.data_collection - INFO - OTX client initialized
+2025-03-27 00:09:11,126 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-27 00:09:11,126 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-27 00:09:11,126 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-27 00:09:11,134 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-27 00:09:11,134 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-27 00:09:15,449 - __main__ - WARNING - Redis not available. Running in standalone mode without background tasks.
+2025-03-27 00:09:15,451 - dash.dash - INFO - Dash is running on http://localhost:8050/
+
+2025-03-27 00:09:49,839 - modules.data_collection - INFO - Reddit integration available
+2025-03-27 00:09:53,339 - modules.data_collection - INFO - OTX client initialized
+2025-03-27 00:09:53,339 - modules.data_collection - INFO - VirusTotal client initialized
+2025-03-27 00:09:53,339 - __main__ - INFO - Successfully initialized DataCollector
+2025-03-27 00:09:53,344 - __main__ - INFO - Successfully initialized MLAnalyzer
+2025-03-27 00:09:53,349 - modules.visualization - INFO - DashboardManager initialized successfully
+2025-03-27 00:09:53,349 - __main__ - INFO - Successfully initialized DashboardManager
+2025-03-27 00:09:57,624 - __main__ - WARNING - Redis not available. Running in standalone mode without background tasks.
+2025-03-27 00:09:57,625 - dash.dash - INFO - Dash is running on http://localhost:8050/
+

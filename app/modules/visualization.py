@@ -19,6 +19,11 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, Tabl
 import smtplib
 from twilio.rest import Client
 from statsmodels.tsa.statespace.sarimax import SARIMAX
+import warnings
+
+# Suppress specific statsmodels warnings
+warnings.filterwarnings('ignore', category=UserWarning, module='statsmodels.tsa.statespace.sarimax')
+warnings.filterwarnings('ignore', category=UserWarning, module='statsmodels.tsa.arima.model')
 
 logger = logging.getLogger(__name__)
 
@@ -3722,6 +3727,28 @@ IOCs:
                 )
             ])
         ], className="mb-4")
+
+    def _create_active_threats_list(self):
+        """Create a list of active threats"""
+        try:
+            df = self._get_threat_data()
+            active_threats = df[df['status'] == 'Active'].sort_values('time', ascending=False)
+            
+            return [
+                self._create_active_threat_item(
+                    threat_id=row['id'],
+                    threat_type=row['type'],
+                    severity=row['severity'],
+                    status=row['status'],
+                    location=row['location'],
+                    time=row['time'],
+                    description=f"Threat detected from {row['source']} via {row['vector']}"
+                )
+                for _, row in active_threats.iterrows()
+            ]
+        except Exception as e:
+            logger.error(f"Error creating active threats list: {e}")
+            return []
 
 class AlertNotification:
     def __init__(self, email, phone_number):

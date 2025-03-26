@@ -13,6 +13,12 @@ from sklearn.preprocessing import MinMaxScaler
 import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
+import warnings
+import logging
+
+# Suppress specific statsmodels warnings
+warnings.filterwarnings('ignore', category=UserWarning, module='statsmodels.tsa.statespace.sarimax')
+warnings.filterwarnings('ignore', category=UserWarning, module='statsmodels.tsa.arima.model')
 
 class TextClassifier:
     """Simple text classifier using TF-IDF and Naive Bayes"""
